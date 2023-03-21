@@ -1,0 +1,38 @@
+<!-- Bare de navigation  en haut de la page -->
+<app-nav-bar></app-nav-bar>
+<!-- le HEADER qui contient une vidéo YouTube -->
+<app-movie></app-movie>
+<!-- Le BODY de la page  -->
+<div class="components">
+  <h5 class="title">Programmes</h5>
+  <!-- Les CARTES de programmes -->
+  <div class="cards">
+    <app-prog-card [progCard]="progCard1"></app-prog-card>
+    <app-prog-card [progCard]="progCard2"></app-prog-card>
+    <app-prog-card [progCard]="progCard3"></app-prog-card>
+    <app-prog-card [progCard]="progCard4"></app-prog-card>
+  </div>
+  <!-- Le bouton CHARGER PLUS pour voir plus de programmes  -->
+  <app-prog-btn></app-prog-btn>
+
+  <app-card-body></app-card-body>
+
+  
+    <!-- Le TITRE VIDEO pour les videos  -->
+    <!-- <h5 class="title">Vidéos</h5>-->
+    <!-- La BARRE DE NAVIGATION pour voire les videos recents, populaires ....  -->
+  <!-- <app-nav-video></app-nav-video>-->
+    <!-- Les CARTES de videos  -->
+    <!--
+  <div class="videos">
+    <app-card-video [cardVideo]="cardVideo1"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo2"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo3"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo4"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo5"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo6"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo7"></app-card-video>
+    <app-card-video [cardVideo]="cardVideo8"></app-card-video>
+  </div>
+  -->
+</div>

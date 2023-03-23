@@ -38,7 +38,19 @@
 
 @media (max-width: 64em) {
   .card--prog{
-    width: 300px;
-    height: 200px;
+   width: 200px;
+    height: 150px;
+
+    .card--title{
+      height: 30px;
+      p{
+        padding: 2px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 48em) {
+    
   }
 }

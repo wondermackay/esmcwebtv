@@ -3,28 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MovieComponent } from './movie/movie.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProgCardComponent } from './prog-card/prog-card.component';
-import { ProgBtnComponent } from './prog-btn/prog-btn.component';
 import { CardBodyComponent } from './card-body/card-body.component';
-import { NavVideoComponent } from './nav-video/nav-video.component';
 import { CardVideoComponent } from './card-video/card-video.component';
+import { HomeComponent } from './home/home.component';
+import { ProgrammeComponent } from './programme/programme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieComponent,
-    NavBarComponent,
     ProgCardComponent,
-    ProgBtnComponent,
     CardBodyComponent,
-    NavVideoComponent,
-    CardVideoComponent
+    CardVideoComponent,
+    HomeComponent,
+    ProgrammeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

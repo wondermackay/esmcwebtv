@@ -55,19 +55,59 @@ $color: rgb(100, 0, 0);
     .header--video {
       gap: 30px;
       flex-direction: column-reverse;
-
-      //.iframe-ctn {
-      //  max-width: 450px;
-      //  max-height: 270px;
-      //  iframe {
-      //    width: 450px;
-      //    height: 270px;
-      //  }
-      //}
-      //h3 {
-      //  font-weight: 600;
-      //  font-size: 20px;
-      //}
     }
   }
 }
+
+.components {
+  margin: 0 100px;
+  .title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 50px 0px 20px 0px;
+  }
+  .cards {
+    box-sizing: border-box;
+
+    display: flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 4rem;
+  }
+
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+.center {
+  margin: auto;
+  width: 20%;
+
+  .btn--prog {
+    height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    min-width: 150px;
+    max-width: 208px;
+    color: white;
+    background: #8d0202;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    &:hover {
+      background: #8d020284;
+    }
+  }
+}
+
+
+//@media (max-width: 64em) {
+//
+//}

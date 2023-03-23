@@ -32,4 +32,17 @@
       color: white;
     }
   }
+
+}
+@media (max-width: 48em) {
+  .card-ctn{
+    grid-template-columns: repeat(1, 1fr);
+    .card-text-box{
+      h2 {
+        margin-bottom: 28px;
+        margin-top: 1rem;
+      }
+    }
+  }
+
 }

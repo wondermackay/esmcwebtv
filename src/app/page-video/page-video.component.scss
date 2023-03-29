@@ -1,106 +1,106 @@
-//general styles
-ul.nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
+// //general styles
+// ul.nav {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   display: flex;
 
   
-}
+// }
 
-//
-header {
-  background: #28293E;
-  color: white;
-  padding: 1.5rem 0 0.5rem 0;
-  h1 {
-    text-transform: capitalize;
-    text-align: center;
-  }
+// //
+// header {
+//   background: #28293E;
+//   color: white;
+//   padding: 1.5rem 0 0.5rem 0;
+//   h1 {
+//     text-transform: capitalize;
+//     text-align: center;
+//   }
 
-  nav {
-    ul {
-      justify-content: center;
-      gap: 2.5rem;
+//   nav {
+//     ul {
+//       justify-content: center;
+//       gap: 2.5rem;
 
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
-      }
+//       a {
+//         text-decoration: none;
+//         color: white;
+//         font-size: 1.2rem;
+//       }
 
-      &:link,:hover,:active{
-        color: #570017;
-      }
-    }
-  }
-}
+//       &:link,:hover,:active{
+//         color: #570017;
+//       }
+//     }
+//   }
+// }
 
-.vid--ctn{
-  .frame-ctn{
-    iframe{
-      width: 40rem;
-      height: 25rem;
-    }
-  }
+// .vid--ctn{
+//   .frame-ctn{
+//     iframe{
+//       width: 40rem;
+//       height: 25rem;
+//     }
+//   }
 
-}
+// }
 
-/* Style global */
-body {
-  font-family: sans-serif;
-  margin: 0;
-}
+// /* Style global */
+// body {
+//   font-family: sans-serif;
+//   margin: 0;
+// }
 
-/* Header */
-header {
-  background-color: rgb(4, 2, 13);
-  color: #fff;
-  text-align: center;
-  padding: 50px;
-}
+// /* Header */
+// header {
+//   background-color: rgb(4, 2, 13);
+//   color: #fff;
+//   text-align: center;
+//   padding: 50px;
+// }
 
-/* Conteneur du lecteur et de la playlist */
-.player-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+// /* Conteneur du lecteur et de la playlist */
+// .player-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
 
-/* Lecteur */
-.player {
-  margin: 20px;
-}
+// /* Lecteur */
+// .player {
+//   margin: 20px;
+// }
 
-/* Playlist */
-.playlist {
-  margin: 20px;
-  width: 300px;
-}
+// /* Playlist */
+// .playlist {
+//   margin: 20px;
+//   width: 300px;
+// }
 
-.playlist h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+// .playlist h2 {
+//   font-size: 20px;
+//   margin-bottom: 10px;
+// }
 
-.playlist ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+// .playlist ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
 
-.playlist li {
-  margin-bottom: 5px;
-}
+// .playlist li {
+//   margin-bottom: 5px;
+// }
 
-.playlist li a {
-  color: #666;
-  display: block;
-  padding: 5px;
-  text-decoration: none;
-}
+// .playlist li a {
+//   color: #666;
+//   display: block;
+//   padding: 5px;
+//   text-decoration: none;
+// }
 
-.playlist li.active a {
-  background-color: #f00;
-  color: #fff;
-}
+// .playlist li.active a {
+//   background-color: #f00;
+//   color: #fff;
+// }

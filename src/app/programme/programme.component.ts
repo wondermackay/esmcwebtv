@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProgrammeComponent {
 
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
+  
+
 }

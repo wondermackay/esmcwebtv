@@ -1,25 +1,4 @@
-<<<<<<< HEAD
-.test{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 4rem;
 
-  .hi{
-    background: #8d0202;
-    width: 500px;
-    height: 300px;
-    :host(.card--prog) {
-        width: 500px ;
-        height: 300px ;
-    }
-
-  }
-
-}
-
-=======
 header {
     background-color: #0e223c;
     color: #fff;
@@ -28,7 +7,7 @@ header {
     height: 350px; /* Hauteur de l'arrière-plan */
     width: 100%; /* Largeur de l'arrière-plan */
   }
-  
+
   h1 {
     margin: 0;
   }
@@ -40,14 +19,14 @@ header {
     max-width: 960px;
     margin: 0 auto;
   }
-  
+
   .card {
     position: relative;
     width: 720px;
     height: 330px;
     cursor: pointer;
   }
-  
+
   .card-image {
     position: absolute;
     top: 0;
@@ -58,7 +37,7 @@ header {
     background-position: center;
     opacity: 0.8;
   }
-  
+
   .card-overlay {
     position: absolute;
     bottom: 0;
@@ -69,22 +48,22 @@ header {
     color: #fff;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .card:hover .card-overlay {
     transform: translateY(-50%);
   }
-  
+
   .card-overlay h2 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
   }
-  
+
   .card-overlay p {
     margin: 10px 0;
     font-size: 16px;
   }
-  
+
   .card-overlay a {
     display: inline-block;
     padding: 10px 20px;
@@ -94,12 +73,12 @@ header {
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .card-overlay a:hover {
     background-color: #1E385B;
     color: #fff;
   }
-  
+
   @media screen and (max-width: 1024px) {
     .card-container {
       max-width: 768px;
@@ -108,7 +87,7 @@ header {
       width: 100%;
     }
   }
-  
+
   @media screen and (max-width: 767px) {
     .card-container {
       flex-direction: column;
@@ -126,10 +105,10 @@ header {
       font-size: 20px;
     }
   }
-  
+
   @media screen and (max-width: 480px) {
     .card-container {
-      max-width: 320
-  
+      max-width: 320px;
+
 } }
->>>>>>> master
+

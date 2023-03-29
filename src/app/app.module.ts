@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgCardComponent } from './prog-card/prog-card.component';
@@ -9,7 +9,10 @@ import { CardVideoComponent } from './card-video/card-video.component';
 import { HomeComponent } from './home/home.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { PageVideoComponent } from './page-video/page-video.component';
+<<<<<<< HEAD
 import { PlaylistMcardComponent } from './page-video/playlist-mcard/playlist-mcard.component';
+=======
+>>>>>>> master
 
 @NgModule({
   declarations: [
@@ -19,8 +22,12 @@ import { PlaylistMcardComponent } from './page-video/playlist-mcard/playlist-mca
     CardVideoComponent,
     HomeComponent,
     ProgrammeComponent,
+<<<<<<< HEAD
     PageVideoComponent,
     PlaylistMcardComponent
+=======
+    PageVideoComponent
+>>>>>>> master
   ],
   imports: [
     BrowserModule,

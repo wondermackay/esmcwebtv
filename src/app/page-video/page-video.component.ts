@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 import {Component, OnInit} from '@angular/core';
 import axios,{AxiosResponse} from 'axios';
 import {error} from "@angular/compiler-cli/src/transformers/util";
+=======
+import { Component } from '@angular/core';
+
+>>>>>>> master
 @Component({
   selector: 'app-page-video',
   templateUrl: './page-video.component.html',
   styleUrls: ['./page-video.component.scss']
 })
+<<<<<<< HEAD
 export class PageVideoComponent implements OnInit{
   ngOnInit() {
     const API_KEY = 'AIzaSyAuNzmHr2U2naJQJwm8LCyowx6PeEFNSTY';
@@ -31,4 +37,8 @@ export class PageVideoComponent implements OnInit{
     //     // Gérer les erreurs de la requête
     //   });
   }
+=======
+export class PageVideoComponent {
+
+>>>>>>> master
 }

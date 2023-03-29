@@ -33,7 +33,7 @@ header {
 
   .card {
     position: relative;
-    width: 700px !important;
+    width: 720px;
     height: 330px;
     cursor: pointer;
   }
@@ -104,8 +104,7 @@ header {
       flex-direction: column;
       align-items: center;
       gap: 10px;
-      padding: 20px;
-      margin: 5px;
+
     }
     .card {
       height: 200px;
@@ -122,5 +121,4 @@ header {
   @media screen and (max-width: 480px) {
     .card-container {
       max-width: 320px;
-
 } }

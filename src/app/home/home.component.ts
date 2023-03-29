@@ -4,6 +4,7 @@ import { CardVideo } from 'src/app/models/card-video.model';
 import { ProgCard } from '../models/prog-card.model';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit{
    progCard2!: ProgCard;
    progCard3!: ProgCard;
    progCard4!: ProgCard;
- 
+
    // Declaration des Cards des VIDEOS
    cardVideo1!: CardVideo;
    cardVideo2!: CardVideo;
@@ -25,7 +26,7 @@ export class HomeComponent implements OnInit{
    cardVideo6!: CardVideo;
    cardVideo7!: CardVideo;
    cardVideo8!: CardVideo;
- 
+
   ngOnInit() {
     // AIzaSyAuNzmHr2U2naJQJwm8LCyowx6PeEFNST
     const titreVideo = document.getElementById('video__title');
@@ -58,23 +59,26 @@ export class HomeComponent implements OnInit{
     xhr.send();
 
      // Appel des cartes des programmes
-     this.progCard2 = new ProgCard(
-      './assets/image/arch.jpg',
-      'Arche de Noé'
-    );
-    this.progCard1 = new ProgCard(
-      './assets/image/jardin.jpg',
-      'Le Jardin d Eden'
-    );
+     this.progCard2 = {
+       proCardImg: './assets/image/arch.jpg',
+       proCardTitle: 'Arche de Noé'
+     }
 
-    this.progCard3 = new ProgCard(
-      './assets/image/messi.jpg',
-      'Le Messie'
-    );
-    this.progCard4 = new ProgCard(
-      'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-      'Le Bâton de Moïse'
-    );
+    this.progCard1 = {
+      proCardImg:'./assets/image/jardin.jpg',
+      proCardTitle:'Le Jardin d Eden'
+    }
+
+
+    this.progCard3 = {
+      proCardImg:'./assets/image/messi.jpg',
+      proCardTitle:'Le Messie'
+    }
+
+    this.progCard4 = {
+      proCardImg:'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
+      proCardTitle:'Le Bâton de Moïse'
+    }
 
 
 
@@ -135,14 +139,12 @@ export class HomeComponent implements OnInit{
       'ipsum dolor sit Lorem, ipsum dolor sit'
     );
   }
-  constructor(private router: Router) { 
-    
-  }
+
+  constructor(private router: Router) { }
 
   redirigerVersP() {
     this.router.navigate(['/programme']);
   }
-  
 
 }
 

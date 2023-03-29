@@ -1,3 +1,4 @@
 export class ProgCard {
-  constructor(public progCardImg: string, public progCardTitle: string) {}
+  proCardImg!: string;
+  proCardTitle!: string
 }

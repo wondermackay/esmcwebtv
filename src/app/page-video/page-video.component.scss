@@ -1,0 +1,45 @@
+//general styles
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+//
+header {
+  background: #28293E;
+  color: white;
+  padding: 1.5rem 0 0.5rem 0;
+  h1 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  nav {
+    ul {
+      justify-content: center;
+      gap: 2.5rem;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      &:link,:hover,:active{
+        color: #8d0202;
+      }
+    }
+  }
+}
+
+.vid--ctn{
+  .frame-ctn{
+    iframe{
+      width: 40rem;
+      height: 25rem;
+    }
+  }
+
+}

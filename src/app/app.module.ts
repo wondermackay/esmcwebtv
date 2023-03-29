@@ -8,6 +8,8 @@ import { CardBodyComponent } from './card-body/card-body.component';
 import { CardVideoComponent } from './card-video/card-video.component';
 import { HomeComponent } from './home/home.component';
 import { ProgrammeComponent } from './programme/programme.component';
+import { PageVideoComponent } from './page-video/page-video.component';
+import { PlaylistMcardComponent } from './page-video/playlist-mcard/playlist-mcard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ProgrammeComponent } from './programme/programme.component';
     CardBodyComponent,
     CardVideoComponent,
     HomeComponent,
-    ProgrammeComponent
+    ProgrammeComponent,
+    PageVideoComponent,
+    PlaylistMcardComponent
   ],
   imports: [
     BrowserModule,

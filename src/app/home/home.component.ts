@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CardVideo } from 'src/app/models/card-video.model';
 import { ProgCard } from '../models/prog-card.model';
+import { ProgrammeComponent } from '../programme/programme.component';
 
 
 @Component({

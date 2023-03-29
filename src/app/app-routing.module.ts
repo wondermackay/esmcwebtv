@@ -8,11 +8,8 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'programme', component: ProgrammeComponent},
-<<<<<<< HEAD
-=======
   {path: 'video', component: PageVideoComponent},
 
->>>>>>> master
 ];
 
 @NgModule({

@@ -9,10 +9,6 @@ import { CardVideoComponent } from './card-video/card-video.component';
 import { HomeComponent } from './home/home.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { PageVideoComponent } from './page-video/page-video.component';
-<<<<<<< HEAD
-import { PlaylistMcardComponent } from './page-video/playlist-mcard/playlist-mcard.component';
-=======
->>>>>>> master
 
 @NgModule({
   declarations: [
@@ -22,12 +18,7 @@ import { PlaylistMcardComponent } from './page-video/playlist-mcard/playlist-mca
     CardVideoComponent,
     HomeComponent,
     ProgrammeComponent,
-<<<<<<< HEAD
-    PageVideoComponent,
-    PlaylistMcardComponent
-=======
     PageVideoComponent
->>>>>>> master
   ],
   imports: [
     BrowserModule,

@@ -62,20 +62,20 @@ export class HomeComponent implements OnInit{
 
      // Appel des cartes des programmes
      this.progCard2 = new ProgCard(
-      './assets/image/arch.jpg',
+      './assets/image/arch.webp',
       'Arche de Noé'
     );
     this.progCard1 = new ProgCard(
-      './assets/image/jardin.jpg',
+      './assets/image/jardin.webp',
       'Le Jardin d Eden'
     );
 
     this.progCard3 = new ProgCard(
-      './assets/image/messi.jpg',
-      'Le Messie'
+      './assets/image/3m.webp',
+      'Mashia Messie Mahdi'
     );
     this.progCard4 = new ProgCard(
-      'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
+      './assets/image/b.webp',
       'Le Bâton de Moïse'
     );
 

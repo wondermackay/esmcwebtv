@@ -37,58 +37,7 @@ $color: rgb(100, 0, 0);
   }
 }
 
-@media (max-width: 64em) {
-  .header--video {
-    gap: 30px;
-    padding: 40px 50px;
 
-    .iframe-ctn {
-      max-width: 450px;
-      max-height: 270px;
-
-      iframe {
-        width: 450px;
-        height: 270px;
-      }
-    }
-
-    h3 {
-      font-weight: 600;
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 48em) {
-    .header--video {
-      gap: 30px;
-      flex-direction: column-reverse;
-      .iframe-ctn {
-        max-width: 350px;
-        max-height: 270px;
-
-        iframe {
-          width: 350px;
-          height: 270px;
-        }
-      }
-    }
-    @media (max-width: 20em) {
-      .header--video {
-        gap: 20px;
-        flex-direction: column-reverse;
-        .iframe-ctn {
-          max-width: 300px;
-          max-height: 270px;
-
-          iframe {
-            width: 300px;
-            height: 270px;
-          }
-        }
-      }
-    }
-  }
-}
 
 .components {
   margin: 0 100px;
@@ -101,7 +50,6 @@ $color: rgb(100, 0, 0);
 
   .cards {
     box-sizing: border-box;
-
     display: flex;
     //justify-content: space-between;
     justify-content: center;
@@ -119,7 +67,7 @@ $color: rgb(100, 0, 0);
 .center {
   margin: auto;
   width: 100%;
-text-align: center;
+  text-align: center;
 
   .btn--prog {
     height: 40px;
@@ -143,6 +91,33 @@ text-align: center;
 }
 
 @media (max-width: 64em) {
+
+  @media (max-width: 48em) {
+
+  }
+}
+
+@media (max-width: 64em) {
+  .header--video {
+    gap: 30px;
+    padding: 40px 50px;
+
+    .iframe-ctn {
+      max-width: 450px;
+      max-height: 270px;
+
+      iframe {
+        width: 450px;
+        height: 270px;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+
   .components {
     margin: 0 40px;
 
@@ -151,14 +126,50 @@ text-align: center;
     }
   }
 
-  @media (max-width: 48em) {
-    .components {
+}
+@media (max-width: 48em) {
+  .header--video {
+    gap: 30px;
+    flex-direction: column-reverse;
 
-      .cards {
-        flex-wrap: wrap;
-        //gap: 1rem;
+    .iframe-ctn {
+      max-width: 500px;
+      max-height: 270px;
+
+      iframe {
+        width: 500px;
+        height: 270px;
+      }
+    }
+  }
+
+  .components {
+
+    .cards {
+
+      flex-wrap: wrap;
+      //gap: 1rem;
+      app-prog-card{
+        width: 100%;
+        height: auto;
       }
     }
   }
 }
 
+@media (max-width: 27em) {
+  .header--video {
+    gap: 20px;
+    flex-direction: column-reverse;
+
+    .iframe-ctn {
+      max-width: 300px;
+      max-height: 270px;
+
+      iframe {
+        width: 300px;
+        height: 270px;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ ul.nav {
   list-style: none;
   display: flex;
 
-  
+
 }
 
 //
@@ -103,4 +103,16 @@ header {
 .playlist li.active a {
   background-color: #f00;
   color: #fff;
+}
+@media (max-width: 48em) {
+  iframe{
+    width: 350px;
+    height: 315px;
+  }
+}
+@media (max-width: 20em) {
+  iframe{
+    width: 300px;
+    height: 215px;
+  }
 }

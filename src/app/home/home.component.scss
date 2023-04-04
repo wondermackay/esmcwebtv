@@ -15,11 +15,11 @@ $color: rgb(100, 0, 0);
 
   // New add
   .iframe-ctn {
-    max-width: 720px;
-    max-height: 500px;
+    max-width: 790px;
+    max-height: 530px;
 
     iframe {
-      width: 720px;
+      width: 790px;
       height: 500px;
     }
   }
@@ -36,6 +36,24 @@ $color: rgb(100, 0, 0);
     line-height: 1.5;
   }
 }
+@media screen and (max-width: 720px) {
+  .iframe-ctn {
+    order: 1;
+  }
+  
+  #video__title {
+    order: 2;
+  }
+  
+  .info--video {
+    margin-top: 1rem;
+  }
+  
+  .prog-cards-ctn {
+    order: 3;
+  }
+}
+
 
 
 

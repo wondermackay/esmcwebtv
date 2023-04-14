@@ -15,8 +15,8 @@
 
   </div>
   <div class="">
-      <app-prog-card [progCard]="progCard1"></app-prog-card>
-      <app-prog-card [progCard]="progCard2"></app-prog-card>
+      <app-prog-card [progCard]="progCard1" [routerLink]="['/video', progCard1.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard2" [routerLink]="['/video', progCard2.progCardTitle]"></app-prog-card>
   </div>
 </header>
 
@@ -28,10 +28,10 @@
   <!-- Les CARTES de programmes -->
 
   <div class="cards">
-    <app-prog-card [progCard]="progCard1"></app-prog-card>
-    <app-prog-card [progCard]="progCard2"></app-prog-card>
-    <app-prog-card [progCard]="progCard3"></app-prog-card>
-    <app-prog-card [progCard]="progCard4"></app-prog-card>
+    <app-prog-card [progCard]="progCard1" [routerLink]="['/video', progCard1.progCardTitle]"></app-prog-card>
+    <app-prog-card [progCard]="progCard2" [routerLink]="['/video', progCard2.progCardTitle]"></app-prog-card>
+    <app-prog-card [progCard]="progCard3" [routerLink]="['/video', progCard3.progCardTitle]"></app-prog-card>
+    <app-prog-card [progCard]="progCard4" [routerLink]="['/video', progCard4.progCardTitle]"></app-prog-card>
   </div>
 
 

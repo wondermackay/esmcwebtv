@@ -26,23 +26,28 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // Appel des cartes des programmes
-    this.progCard2 = new ProgCard(
-      './assets/image/arch.jpg',
-      'Arche de Noé'
-    );
-    this.progCard1 = new ProgCard(
-      './assets/image/jardin.jpg',
-      'Le Jardin d Eden'
-    );
+    this.progCard2 =
+      {
+        progCardImg: './assets/image/arch.webp',
+        progCardTitle: 'Arche de Noé'
+      }
+    ;
+    this.progCard1 = {
+      progCardImg: './assets/image/jardin.webp',
+      progCardTitle: 'Le Jardin d Eden'
+    }
+    ;
 
-    this.progCard3 = new ProgCard(
-      './assets/image/messi.jpg',
-      'Le Messie'
-    );
-    this.progCard4 = new ProgCard(
-      'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-      'Le Bâton de Moïse'
-    );
+    this.progCard3 = {
+      progCardImg: './assets/image/3m.webp',
+      progCardTitle: 'Mashia Messie Mahdi'
+    }
+    ;
+    this.progCard4 = {
+      progCardImg: './assets/image/b.webp',
+      progCardTitle: 'Le Bâton de Moïse}',
+    }
+    ;
 
 
 

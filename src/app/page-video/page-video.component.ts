@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-page-video',
@@ -6,7 +7,10 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./page-video.component.scss']
 })
 export class PageVideoComponent implements OnInit {
+  title!: string | null;
+  constructor(private route: ActivatedRoute) {}
   ngOnInit() {
+    this.title = this.route.snapshot.paramMap.get('title');
     const api_key = "AIzaSyAuNzmHr2U2naJQJwm8LCyowx6PeEFNSTY";
     const playlist_id = "PLsoi2D5rHj1yALMuMV3lZaCMUTEj2Wy4n";
 

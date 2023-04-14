@@ -11,6 +11,7 @@ import {ProgrammeComponent} from '../programme/programme.component';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit{
+
   // Declaration des Cards des PROGRAMMES
   progCard1!: ProgCard;
   progCard2!: ProgCard;
@@ -26,6 +27,7 @@ export class HomeComponent implements OnInit{
   cardVideo6!: CardVideo;
   cardVideo7!: CardVideo;
   cardVideo8!: CardVideo;
+
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -59,7 +61,7 @@ export class HomeComponent implements OnInit{
       }
     };
     xhr.send();
-
+    
     // Appel des cartes des programmes
     this.progCard2 =
       {

@@ -1,0 +1,17 @@
+
+.icon {
+  color: #AB426A;
+}
+.carouselExampleControls {
+  height: 50px;
+}
+
+.nomb {
+  background-color: white;
+  padding: 5px;
+}
+
+.apropos a{
+  color: #777777 !important;
+  text-decoration: underline;
+}

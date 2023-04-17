@@ -7,7 +7,9 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./page-video.component.scss']
 })
 export class PageVideoComponent implements OnInit {
+
   title!: string | null;
+
   constructor(private route: ActivatedRoute) {}
   ngOnInit() {
     this.title = this.route.snapshot.paramMap.get('title');

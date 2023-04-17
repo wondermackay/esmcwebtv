@@ -154,8 +154,21 @@ $color: rgb(255, 163, 163);
         width: 450px;
         height: 270px;
       }
-    }
 
+    }
+    .scrolly {
+      width:300px;
+       height: 270px;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       overflow-y: scroll;
+        .vid{
+         width: 200px;
+         height: 100px;
+         }
+
+     }
     h3 {
       font-weight: 600;
       font-size: 20px;
@@ -183,9 +196,23 @@ $color: rgb(255, 163, 163);
       flex-direction: column;
       gap: 1rem;
       iframe {
-        width: 500px;
+        width: 300px;
         height: 270px;
       }
+
+    }
+    .scrolly {
+     width:300px;
+      height: 270px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      overflow-y: scroll;
+       .vid{
+        width: 200px;
+        height: 100px;
+        }
+
     }
   }
 
@@ -216,6 +243,7 @@ $color: rgb(255, 163, 163);
         width: 300px;
         height: 270px;
       }
+
     }
   }
 }

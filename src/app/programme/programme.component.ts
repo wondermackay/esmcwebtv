@@ -65,18 +65,18 @@ export class ProgrammeComponent {
      }
    };
    xhr.send();
-   
+
    // Appel des cartes des programmes
+   this.progCard1 = {
+    progCardImg: './assets/image/jardin.webp',
+    progCardTitle: 'Le Jardin d Eden'
+  }
+  ;
    this.progCard2 =
      {
        progCardImg: './assets/image/arch.webp',
        progCardTitle: 'Arche de Noé'
      }
-   ;
-   this.progCard1 = {
-     progCardImg: './assets/image/jardin.webp',
-     progCardTitle: 'Le Jardin d Eden'
-   }
    ;
 
    this.progCard3 = {
@@ -87,10 +87,6 @@ export class ProgrammeComponent {
    this.progCard4 = {
      progCardImg: './assets/image/b.webp',
      progCardTitle: 'Le Bâton de Moïse}',
-   };
-   this.progCard4 = {
-     progCardImg: './assets/image/b.webp',
-     progCardTitle: 'Le Bâton de Moïse',
    };
    this.progCard5 = {
     progCardImg: './assets/image/christ.webp',
@@ -120,7 +116,7 @@ export class ProgrammeComponent {
     progCardImg: './assets/image/paradis.webp',
     progCardTitle: 'Le Paradis'
   };
-  
+
    }
    constructor(private router: Router){}
  }

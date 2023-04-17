@@ -11,21 +11,28 @@ import {ProgCard} from '../models/prog-card.model';
 })
 export class HomeComponent implements OnInit{
 
-  // Declaration des Cards des PROGRAMMES
-  progCard1!: ProgCard;
-  progCard2!: ProgCard;
-  progCard3!: ProgCard;
-  progCard4!: ProgCard;
+ // Declaration des Cards des PROGRAMMES
+ progCard1!: ProgCard;
+ progCard2!: ProgCard;
+ progCard3!: ProgCard;
+ progCard4!: ProgCard;
+ progCard5!: ProgCard;
+ progCard6!: ProgCard;
+ progCard7!: ProgCard;
+ progCard8!: ProgCard;
+ progCard9!: ProgCard;
+ progCard10!: ProgCard;
+ progCard11!: ProgCard;
 
-  // Declaration des Cards des VIDEOS
-  cardVideo1!: CardVideo;
-  cardVideo2!: CardVideo;
-  cardVideo3!: CardVideo;
-  cardVideo4!: CardVideo;
-  cardVideo5!: CardVideo;
-  cardVideo6!: CardVideo;
-  cardVideo7!: CardVideo;
-  cardVideo8!: CardVideo;
+ // Declaration des Cards des VIDEOS
+ cardVideo1!: CardVideo;
+ cardVideo2!: CardVideo;
+ cardVideo3!: CardVideo;
+ cardVideo4!: CardVideo;
+ cardVideo5!: CardVideo;
+ cardVideo6!: CardVideo;
+ cardVideo7!: CardVideo;
+ cardVideo8!: CardVideo;
 
 
   ngOnInit() {
@@ -60,7 +67,7 @@ export class HomeComponent implements OnInit{
       }
     };
     xhr.send();
-    
+
     // Appel des cartes des programmes
     this.progCard2 =
       {
@@ -82,6 +89,34 @@ export class HomeComponent implements OnInit{
     this.progCard4 = {
       progCardImg: './assets/image/b.webp',
       progCardTitle: 'Le Bâton de Moïse}',
+    };
+    this.progCard5 = {
+      progCardImg: './assets/image/christ.webp',
+      progCardTitle: 'Le Christ',
+    };
+    this.progCard6 = {
+      progCardImg: './assets/image/sceau.webp',
+      progCardTitle: 'Sceau des Prophetes',
+    };
+    this.progCard7 = {
+      progCardImg: './assets/image/3m.webp',
+      progCardTitle: 'Mashia Messie Mahdi',
+    };
+    this.progCard8 = {
+      progCardImg: './assets/image/jourreligion.webp',
+      progCardTitle: 'Jour de la Religion'
+    };
+    this.progCard9 = {
+      progCardImg: './assets/image/jourdernier.webp',
+      progCardTitle: 'Jour dernier'
+    };
+    this.progCard10 = {
+      progCardImg: './assets/image/resurection.webp',
+      progCardTitle: 'Resurection'
+    };
+    this.progCard11 = {
+      progCardImg: './assets/image/paradis.webp',
+      progCardTitle: 'Le Paradis'
     };
     }
     constructor(private router: Router){}

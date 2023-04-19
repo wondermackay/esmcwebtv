@@ -3,6 +3,8 @@
   "compilerOptions": {
     //    my add
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,  
     //////////////////////
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",

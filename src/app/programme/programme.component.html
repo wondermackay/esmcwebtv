@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <h1 class="title">Nos Programmes</h1>
 </header>
 
@@ -22,4 +22,29 @@
     <app-prog-card [progCard]="progCard9" [routerLink]="['/video', progCard9.progCardTitle]"></app-prog-card>
     <app-prog-card [progCard]="progCard10" [routerLink]="['/video', progCard10.progCardTitle]"></app-prog-card>
     <app-prog-card [progCard]="progCard11" [routerLink]="['/video', progCard11.progCardTitle]"></app-prog-card>
-  </div>
+  </div> -->
+
+
+    
+<section class="section-programme">
+ 
+  <div class="parent">
+    <div class="header">
+      <h1 class="title">Nos Programmes</h1>
+      </div>
+    <div class="programmes" >
+        <div class=" card col-md-2" *ngFor="let pg of prog">
+            <a [routerLink]="['/video', +pg.id]">
+            <div class="position-relative overflow-hidden">
+                <img [src]="prog[pg.id-1].img" class="img-fluid img" alt="">
+            </div>
+            <div class="border-light border-top-2 card-titre">
+                <p class="">{{pg.libelle}}</p>
+             
+            </div>   
+           </a>
+        </div>
+   </div>
+
+</div>
+</section>

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CardVideo } from '../models/card-video.model';
 import { ProgCard } from '../models/prog-card.model';
+import ProgrammeJson from '../programme.json'
+import { programmeModel } from '../models/programme.model';
 
 @Component({
   selector: 'app-programme',
@@ -15,69 +17,70 @@ id:number=0
 detprog: any;
   nom:String="";
   img:String="";
-  tprog = [
-  {
-    id: 1,
-    title:'Arche de Noé',
-    img: "./assets/image/arch.webp",
-  },
-  {
-    id: 2,
-    title:'Le Jardin d Eden',
-    img: "./assets/image/jardin.webp",
-  },
-  {
-    id: 3,
-    title:'Resurection',
-    img: "./assets/image/resurection.webp",
-  },
-  {
-    id: 4,
-    title:'Le Bâton de Moïse',
-    img: "./assets/image/b.webp",
-  },
-  {
-    id: 5,
-    title:'Le Bâton de Moïse',
-    img: "./assets/image/b.webp",
-  },
-  {
-    id: 6,
-    title:'Resurection',
-    img: "./assets/image/resurection.webp",
-  },
-  {
-    id: 7,
-    title:'Sceau des Prophetes',
-    img: "./assets/image/sceau.webp",
-  },
-  {
-    id: 8,
-    title:'Mashia Messie Mahdi',
-    img: "./assets/image/3m.webp",
-  },
-  {
-    id: 9,
-    title:'Jour de la Religion',
-    img: "./assets/image/jourreligion.webp",
-  },
-  {
-    id: 10,
-    title:'Jour dernier',
-    img: "./assets/image/jourdernier.webp",
-  },
-  {
-    id: 11,
-    title:'Resurection',
-    img: "./assets/image/resurection.webp",
-  },
-  {
-    id: 12,
-    title:'Resurection',
-    img: "./assets/image/resurection.webp",
-  },
+  prog:programmeModel[] = ProgrammeJson
+//   tprog = [
+//   {
+//     id: 1,
+//     title:'Arche de Noé',
+//     img: "./assets/image/arch.webp",
+//   },
+//   {
+//     id: 2,
+//     title:'Le Jardin d Eden',
+//     img: "./assets/image/jardin.webp",
+//   },
+//   {
+//     id: 3,
+//     title:'Resurection',
+//     img: "./assets/image/resurection.webp",
+//   },
+//   {
+//     id: 4,
+//     title:'Le Bâton de Moïse',
+//     img: "./assets/image/b.webp",
+//   },
+//   {
+//     id: 5,
+//     title:'Le Bâton de Moïse',
+//     img: "./assets/image/b.webp",
+//   },
+//   {
+//     id: 6,
+//     title:'Resurection',
+//     img: "./assets/image/resurection.webp",
+//   },
+//   {
+//     id: 7,
+//     title:'Sceau des Prophetes',
+//     img: "./assets/image/sceau.webp",
+//   },
+//   {
+//     id: 8,
+//     title:'Mashia Messie Mahdi',
+//     img: "./assets/image/3m.webp",
+//   },
+//   {
+//     id: 9,
+//     title:'Jour de la Religion',
+//     img: "./assets/image/jourreligion.webp",
+//   },
+//   {
+//     id: 10,
+//     title:'Jour dernier',
+//     img: "./assets/image/jourdernier.webp",
+//   },
+//   {
+//     id: 11,
+//     title:'Resurection',
+//     img: "./assets/image/resurection.webp",
+//   },
+//   {
+//     id: 12,
+//     title:'Resurection',
+//     img: "./assets/image/resurection.webp",
+//   },
  
-];
+// ];
  progCard1!: ProgCard;
  progCard2!: ProgCard;
  progCard3!: ProgCard;

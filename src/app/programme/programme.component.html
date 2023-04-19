@@ -33,13 +33,13 @@
       <h1 class="title">Nos Programmes</h1>
       </div>
     <div class="programmes" >
-        <div class=" card col-md-2" *ngFor="let prog of tprog">
-            <a [routerLink]="['/video', +id]">
+        <div class=" card col-md-2" *ngFor="let pg of prog">
+            <a [routerLink]="['/video', +pg.id]">
             <div class="position-relative overflow-hidden">
-                <img [src]="tprog[prog.id-1].img" class="img-fluid img" alt="">
+                <img [src]="prog[pg.id-1].img" class="img-fluid img" alt="">
             </div>
             <div class="border-light border-top-2 card-titre">
-                <p class="">{{prog.title}}</p>
+                <p class="">{{pg.libelle}}</p>
              
             </div>   
            </a>

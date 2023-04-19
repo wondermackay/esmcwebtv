@@ -1,27 +1,18 @@
-  <body >
-    <header>
-      <h1 class="title">{{nom}}</h1>
+<body>
+  <header>
+    <h1 class="title">{{ nom }}</h1>
 
-  <nav>
-    <ul class="nav">
-      <li><a href="#">Ewe</a></li>
-      <li><a href="#" routerLinkActive="active">Francais</a></li>
-      <li><a href="#">Kabye</a></li>
-      <li><a href="#">Kotokoli</a></li>
-    </ul>
-  </nav>
-    </header>
-    <div class="player-container">
-      <div class="player">
-        <iframe width="920" height="515"
-                src="https://player.viloud.tv/embed/channel/24f702c58ea642853ed4282d5c0cce45?"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-      </div>
-     
-    </div>
-    <!-- <div class="row">
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Ewe</a></li>
+        <li><a href="#" routerLinkActive="active">Francais</a></li>
+        <li><a href="#">Kabye</a></li>
+        <li><a href="#">Kotokoli</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <!-- <div class="row">
       <div class="card">
         <img src="https://source.unsplash.com/500x500/?nature" alt="Card image">
         <h5>Episode 1</h5>
@@ -40,217 +31,156 @@
       </div>
     </div>
      -->
-    <div class="row top" *ngIf="id===1">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                  <div class="position-relative overflow-hidden">
-                    <img [src]="tepisode.img" class="img-fluid img" alt="">
-                </div>
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 1">
+    <div class="player-container">
+      <div class="player">
+        <iframe
+          width="920"
+          height="515"
+          src='https://player.viloud.tv/embed/channel/24f702c58ea642853ed4282d5c0cce45?autoplay=1&volume=1&controls=1&title=1&share=1&open_playlist=0&random=0'
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
-
+    </div>
+    <div class="card" *ngFor="let te of tepisode">
+      <a [routerLink]="['/video', +te.id]">
+        <div class="position-relative overflow-hidden">
+            <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="">
+        </div>
+        <div class="border-light border-top-2 card-titre">
+            <p class="">{{te.libelle}}</p>
+         
+        </div>   
+       </a>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===2">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 2">
+    <div class="player-container">
+      <div class="player">
+        <iframe
+          width="920"
+          height="515"
+          src='https://player.viloud.tv/embed/channel/b9e3eecd47037862e76351a8dbfff3ad?autoplay=1&volume=1&controls=1&title=1&share=1&open_playlist=0&random=0'
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
-
-  </div>
-    <div class="row top" *ngIf="id===3">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+    </div>
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===4">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 3">
+    <div class="player-container">
+      <div class="player">
+        <iframe
+          width="920"
+          height="515"
+          src='[photo]'
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
-
-  </div>
-    <div class="row top" *ngIf="id===5">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+    </div>
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===6">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 4">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===7">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 5">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===8">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 6">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===9">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 7">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===10">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 8">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    <div class="row top" *ngIf="id===11">
-      <div class="col-md-12">
-          <div class="row">
-              <div class="col-md-3 col-6 col-ms-6 my-4" *ngFor="let te of tepisode">
-                  <a
-               
-                  [routerLink]="['/video/'+te.idp]" class="a">
-                      <div class="card card-body p-4 shadow-lg border-0 hover-card">
-                          <p class="text-primar my-2 text-center">
-                             {{te.libelle}}
-                          </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-
+  <div class="row" *ngIf="id === 9">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
       </div>
-
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
   </div>
-    
-  </body>
+  <div class="row" *ngIf="id === 10">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
+      </div>
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
+  </div>
+  <div class="row" *ngIf="id === 11">
+    <div class="card" *ngFor="let te of tepisode">
+      <div class="position-relative overflow-hidden">
+        <img [src]="tepisode[te.id-1]?.img" class="img-fluid img" alt="" />
+      </div>
+      <h5 class="text-primar my-2 text-center">
+        {{ te.libelle }}
+      </h5>
+    </div>
+  </div>
+</body>

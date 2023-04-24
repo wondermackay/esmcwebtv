@@ -69,52 +69,63 @@ export class HomeComponent implements OnInit{
     xhr.send();
 
     // Appel des cartes des programmes
-    this.progCard2 =
-      {
-        progCardImg: './assets/image/arch.webp',
-        progCardTitle: 'Arche de Noé'
-      }
-    ;
     this.progCard1 = {
+      id:1,
       progCardImg: './assets/image/jardin.webp',
       progCardTitle: 'Le Jardin d Eden'
     }
     ;
+     this.progCard2 =
+       {
+        id:2,
+         progCardImg: './assets/image/arch.webp',
+         progCardTitle: 'Arche de Noé'
+       }
+     ;
 
-    this.progCard3 = {
-      progCardImg: './assets/image/3m.webp',
-      progCardTitle: 'Mashia Messie Mahdi'
-    }
-    ;
-    this.progCard4 = {
-      progCardImg: './assets/image/b.webp',
-      progCardTitle: 'Le Bâton de Moïse}',
-    };
-    this.progCard5 = {
+     this.progCard3 = {
+      id:3,
+       progCardImg: './assets/image/rct.webp',
+       progCardTitle: 'Royaume des Cieux et de la Terre'
+     }
+     ;
+     this.progCard4 = {
+      id:4,
+       progCardImg: './assets/image/b.webp',
+       progCardTitle: 'Le Bâton de Moïse}',
+     };
+     this.progCard5 = {
+      id:5,
       progCardImg: './assets/image/christ.webp',
       progCardTitle: 'Le Christ',
     };
     this.progCard6 = {
+      id:6,
       progCardImg: './assets/image/sceau.webp',
       progCardTitle: 'Sceau des Prophetes',
     };
     this.progCard7 = {
+      id:7,
       progCardImg: './assets/image/3m.webp',
       progCardTitle: 'Mashia Messie Mahdi',
     };
     this.progCard8 = {
+      id:8,
       progCardImg: './assets/image/jourreligion.webp',
       progCardTitle: 'Jour de la Religion'
     };
     this.progCard9 = {
+      id:9,
       progCardImg: './assets/image/jourdernier.webp',
       progCardTitle: 'Jour dernier'
     };
     this.progCard10 = {
+      id:10,
       progCardImg: './assets/image/resurection.webp',
       progCardTitle: 'Resurection'
     };
     this.progCard11 = {
+      id:11,
       progCardImg: './assets/image/paradis.webp',
       progCardTitle: 'Le Paradis'
     };

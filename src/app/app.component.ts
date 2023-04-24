@@ -26,29 +26,32 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // Appel des cartes des programmes
-    this.progCard2 =
-      {
-        progCardImg: './assets/image/arch.webp',
-        progCardTitle: 'Arche de Noé'
-      }
-    ;
     this.progCard1 = {
+      id:1,
       progCardImg: './assets/image/jardin.webp',
       progCardTitle: 'Le Jardin d Eden'
     }
     ;
+     this.progCard2 =
+       {
+        id:2,
+         progCardImg: './assets/image/arch.webp',
+         progCardTitle: 'Arche de Noé'
+       }
+     ;
 
-    this.progCard3 = {
-      progCardImg: './assets/image/3m.webp',
-      progCardTitle: 'Mashia Messie Mahdi'
-    }
-    ;
-    this.progCard4 = {
-      progCardImg: './assets/image/b.webp',
-      progCardTitle: 'Le Bâton de Moïse}',
-    }
-    ;
-
+     this.progCard3 = {
+      id:3,
+       progCardImg: './assets/image/rct.webp',
+       progCardTitle: 'Royaume des Cieux et de la Terre'
+     }
+     ;
+     this.progCard4 = {
+      id:4,
+       progCardImg: './assets/image/b.webp',
+       progCardTitle: 'Le Bâton de Moïse}',
+     };
+    
 
 
     // Appel des cartes des Vidéos

@@ -15,6 +15,7 @@ export class PageVideoComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {}
   ngOnInit() {
+    window.scrollTo(0, 0);
    // this.title = this.route.snapshot.paramMap.get('title');
     let id = this.route.snapshot.params["id"];
     this.route.paramMap.subscribe((params: ParamMap) => {

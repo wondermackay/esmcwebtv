@@ -1,114 +1,25 @@
-<header class="header">
-    <h1 class="header-title">Nos programmes</h1>
+<header>
+  <h1 class="title">Nos Programmes</h1>
 </header>
 
-
-<br><br>
-<div class="card-container">
-    <div class="card">
-      <div class="card-image" style="background-image: url('./assets/image/jardin.webp')"></div>
-      <div class="card-overlay">
-        <h2>Le Jardin d'Eden</h2>
-        <p>Un programme qui vous ramène aux sources</p>
-        <a routerLink="/video">Voir</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image" style="background-image: url('./assets/image/arch.webp')"></div>
-      <div class="card-overlay">
-        <h2>Arch de Noé</h2>
-        <p>Description de la carte 2</p>
-        <a routerLink="/video">Voir</a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-
-<div class="card-container">
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/rct.webp')"></div>
-    <div class="card-overlay">
-      <h2>Royaume des Cieux et de la Terre</h2>
-      <p>Description de la carte 1</p>
-      <a routerLink="/video">Voir</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/b.webp')"></div>
-    <div class="card-overlay">
-      <h2>Le Bâton de Moïse</h2>
-      <p>Description de la carte 2</p>
-      <a routerLink="/video">Voir</a>
-    </div>
-  </div>
-  </div>
 <br><br>
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/christ.webp')"></div>
-    <div class="card-overlay">
-      <h2>Le Christ</h2>
-      <p>Description de la carte 2</p>
-      <a routerLink="/video">Voir</a>
-    </div>
+  <div class="cards">
+    <app-prog-card [progCard]="progCard1" [routerLink]="['/video', progCard1.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard2" [routerLink]="['/video', progCard2.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard3" [routerLink]="['/video', progCard3.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard4" [routerLink]="['/video', progCard4.id]"></app-prog-card>
   </div>
-  <br><br>
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/sceau.webp')"></div>
-    <div class="card-overlay">
-      <h2>Sceau des Prophetes</h2>
-      <p>Description de la carte 2</p>
-      <a routerLink="/video">Voir</a>
-    </div>
-  </div>
-</div>
-<br><br>
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/3m.webp')"></div>
-    <div class="card-overlay">
-      <h2>Mashia Messie Mahdi</h2>
-      <p>Description de la carte 2</p>
-      <a routerLink="/video">Voir</a>
-    </div>
+  <div class="cards">
+    <app-prog-card [progCard]="progCard5" [routerLink]="['/video', progCard5.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard6" [routerLink]="['/video', progCard6.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard7" [routerLink]="['/video', progCard7.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard8" [routerLink]="['/video', progCard8.id]"></app-prog-card>
   </div>
-  <br><br>
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/jourreligion.webp')"></div>
-    <div class="card-overlay">
-      <h2>Jour de la Religion</h2>
-      <p>Description de la carte 2</p>
-      <a routerLink="/video">Voir</a>
-    </div>
-  </div>
-</div>
-<br><br>
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/jourdernier.webp')"></div>
-    <div class="card-overlay">
-      <h2>Jour dernier</h2>
-      <p>Description de la carte 2</p>
-      <a routerLink="/video">Voir</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-image" style="background-image: url('./assets/image/resurection.webp')"></div>
-    <div class="card-overlay">
-      <h2>Resurection</h2>
-      <p>Description de la carte 1</p>
-      <a routerLink="/video">Voir</a>
-    </div>
-  </div>
-    <div class="card">
-      <div class="card-image" style="background-image: url('./assets/image/paradis.webp')"></div>
-      <div class="card-overlay">
-        <h2>Le Paradis</h2>
-        <p>Description de la carte 1</p>
-        <a routerLink="/video">Voir</a>
-      </div>
-    </div>
+  <div class="cards">
+    <app-prog-card [progCard]="progCard9" [routerLink]="['/video', progCard9.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard10" [routerLink]="['/video', progCard10.id]"></app-prog-card>
+    <app-prog-card [progCard]="progCard11" [routerLink]="['/video', progCard11.id]"></app-prog-card>
   </div>

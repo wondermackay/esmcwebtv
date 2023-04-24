@@ -1,18 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageVideoComponent } from './page-video.component';
+import { FooterComponent } from './footer.component';
 
-describe('PageVideoComponent', () => {
-  let component: PageVideoComponent;
-  let fixture: ComponentFixture<PageVideoComponent>;
+describe('FooterComponent', () => {
+  let component: FooterComponent;
+  let fixture: ComponentFixture<FooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PageVideoComponent ]
+      declarations: [ FooterComponent ]
     })
     .compileComponents();
+  });
 
-    fixture = TestBed.createComponent(PageVideoComponent);
+  beforeEach(() => {
+    fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

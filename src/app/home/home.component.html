@@ -1,52 +1,47 @@
-
 <header class="header--video">
-    <div class="iframe-ctn">
-      <iframe
-    src="https://www.youtube.com/embed/YJ_AvFvED8k"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    autoplay
-  ></iframe>
-
-    </div>
-
-    <div class="info--video">
-      <h3 id="video__title">Title of video</h3>
-      <p id="video__description"> Video description
-      </p>
-    </div>
-</header>
-
-
-
-  <!-- Le BODY de la page  -->
-<div class="components">
-
-    <h5 class="title">Programmes</h5>
-
-    <!-- Les CARTES de programmes -->
-
-    <div class="cards">
-      <app-prog-card [progCard]="progCard1"></app-prog-card>
-      <app-prog-card [progCard]="progCard2"></app-prog-card>
-      <app-prog-card [progCard]="progCard3"></app-prog-card>
-      <app-prog-card [progCard]="progCard4"></app-prog-card>
-</div>
-
-
-    <!-- Le bouton CHARGER PLUS pour voir plus de programmes  -->
-    <div class="center">
-        <button class="btn--prog" routerLink="/programme">Charger plus</button>
-    </div>
-
-<!-- 
-
-  <div class=".card--body">
-    <app-card-body></app-card-body>
-  </div> -->
-
+  <div class="iframe-ctn">
+    <iframe
+      src="https://player.viloud.tv/embed/channel/29823d92af1c321b486d986c09647d73?autoplay=1&volume=1&controls=1&title=1&share=1&open_playlist=0&random=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow='autoplay'
+      autoplay
+    ></iframe>
   </div>
 
-  <router-outlet></router-outlet>
+  <div class="card scrolly" >
+    <app-prog-card [progCard]="progCard1" [routerLink]="['/video', progCard1.id]"></app-prog-card>
+      <app-prog-card [progCard]="progCard2" [routerLink]="['/video', progCard2.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard3" [routerLink]="['/video', progCard3.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard4" [routerLink]="['/video', progCard4.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard5" [routerLink]="['/video', progCard5.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard6" [routerLink]="['/video', progCard6.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard7" [routerLink]="['/video', progCard7.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard8" [routerLink]="['/video', progCard8.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard9" [routerLink]="['/video', progCard9.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard10" [routerLink]="['/video', progCard10.progCardTitle]"></app-prog-card>
+      <app-prog-card [progCard]="progCard11" [routerLink]="['/video', progCard11.progCardTitle]"></app-prog-card>
+
+
+  </div>
+</header>
+
+<!-- Le BODY de la page  -->
+<div class="components">
+  <h5 class="title">Programmes</h5>
+
+  <!-- Les CARTES de programmes -->
+
+  <div class="cards">
+    <app-prog-card  [progCard]="progCard1" [routerLink]="['/video', progCard1.progCardTitle]"></app-prog-card>
+    <app-prog-card  [progCard]="progCard2" [routerLink]="['/video', progCard2.progCardTitle]"></app-prog-card>
+    <app-prog-card  [progCard]="progCard3" [routerLink]="['/video', progCard3.progCardTitle]"></app-prog-card>
+    <app-prog-card  [progCard]="progCard4" [routerLink]="['/video', progCard4.progCardTitle]"></app-prog-card>
+  </div>
+  <!-- Le bouton CHARGER PLUS pour voir plus de programmes  -->
+
+  <div class="center">
+    <button class="btn--prog" routerLink="/programme">Charger plus</button>
+  </div>
+</div>

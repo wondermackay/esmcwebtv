@@ -4,18 +4,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgCardComponent } from './prog-card/prog-card.component';
-import { CardBodyComponent } from './card-body/card-body.component';
-import { CardVideoComponent } from './card-video/card-video.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { PageVideoComponent } from './page-video/page-video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
     ProgCardComponent,
-    CardBodyComponent,
-    CardVideoComponent,
     HomeComponent,
     ProgrammeComponent,
     PageVideoComponent

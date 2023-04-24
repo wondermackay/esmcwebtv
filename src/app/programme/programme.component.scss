@@ -10,6 +10,14 @@ header {
 
 }
 
+.cards {
+  box-sizing: border-box;
+  display: flex;
+  //justify-content: space-between;
+  justify-content: center;
+  gap: 2rem 4rem;
+}
+
 
   h1 {
     margin: 0;

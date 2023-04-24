@@ -2,28 +2,48 @@ $header--background: rgba(#ef7f75, 0.4);
 $box--shadow: #ef7f75 4px 4px 20px;
 $box--shadow--active: #ef7f75 0 0 5px;
 $box--shadow--btn: #ef7f75 3px 3px 7px;
-$color: rgb(100, 0, 0);
+$color: rgb(255, 163, 163);
 
 .header--video {
   background-color: lighten($color, 15%);
-  padding: 80px 100px;
+  padding: 80px 0;
   color: #eee;
 
   display: flex;
   gap: 50px;
   align-items: center;
+  justify-content: center;
 
   // New add
   .iframe-ctn {
-    max-width: 720px;
-    max-height: 500px;
+    max-width: 790px;
+    max-height: 530px;
 
     iframe {
-      width: 720px;
+      width: 790px;
       height: 500px;
     }
   }
+  .scrolly {
+    height:500px;
+    width: 25%;
+    overflow-y: scroll;
+     .vid{
+        width: 100%;
+        height: 10px;
+      }
 
+  }
+
+  .scrolly::-webkit-scrollbar {
+    position: absolute;
+    width: 7px;
+    background-color: white;
+  }
+
+  .scrolly::-webkit-scrollbar-thumb {
+    background: #ae3764;
+  }
   h3 {
     font-weight: 600;
     font-size: 28px;
@@ -36,59 +56,26 @@ $color: rgb(100, 0, 0);
     line-height: 1.5;
   }
 }
-
-@media (max-width: 64em) {
-  .header--video {
-    gap: 30px;
-    padding: 40px 50px;
-
-    .iframe-ctn {
-      max-width: 450px;
-      max-height: 270px;
-
-      iframe {
-        width: 450px;
-        height: 270px;
-      }
-    }
-
-    h3 {
-      font-weight: 600;
-      font-size: 20px;
-    }
+@media screen and (max-width: 720px) {
+  .iframe-ctn {
+    order: 1;
   }
 
-  @media (max-width: 48em) {
-    .header--video {
-      gap: 30px;
-      flex-direction: column-reverse;
-      .iframe-ctn {
-        max-width: 350px;
-        max-height: 270px;
+  #video__title {
+    order: 2;
+  }
 
-        iframe {
-          width: 350px;
-          height: 270px;
-        }
-      }
-    }
-    @media (max-width: 20em) {
-      .header--video {
-        gap: 20px;
-        flex-direction: column-reverse;
-        .iframe-ctn {
-          max-width: 300px;
-          max-height: 270px;
+  .info--video {
+    margin-top: 1rem;
+  }
 
-          iframe {
-            width: 300px;
-            height: 270px;
-          }
-        }
-      }
-    }
+  .prog-cards-ctn {
+    order: 3;
   }
 }
+
+
+
 
 .components {
   margin: 0 100px;
@@ -96,16 +83,21 @@ $color: rgb(100, 0, 0);
   .title {
     text-transform: uppercase;
     font-weight: 700;
-    margin: 50px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
+    margin-left: 90px;
   }
 
   .cards {
     box-sizing: border-box;
-
     display: flex;
     //justify-content: space-between;
     justify-content: center;
     gap: 2rem 4rem;
+    .vid{
+      width: 300px;
+      height: 200px;
+
+    }
   }
 
   .videos {
@@ -119,7 +111,7 @@ $color: rgb(100, 0, 0);
 .center {
   margin: auto;
   width: 100%;
-text-align: center;
+  text-align: center;
 
   .btn--prog {
     height: 40px;
@@ -143,6 +135,46 @@ text-align: center;
 }
 
 @media (max-width: 64em) {
+
+  @media (max-width: 48em) {
+
+  }
+}
+
+@media (max-width: 64em) {
+  .header--video {
+    gap: 30px;
+    padding: 40px 50px;
+
+    .iframe-ctn {
+      max-width: 450px;
+      max-height: 270px;
+
+      iframe {
+        width: 450px;
+        height: 270px;
+      }
+
+    }
+    .scrolly {
+      width:300px;
+       height: 270px;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       overflow-y: scroll;
+        .vid{
+         width: 200px;
+         height: 100px;
+         }
+
+     }
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+
   .components {
     margin: 0 40px;
 
@@ -151,14 +183,67 @@ text-align: center;
     }
   }
 
-  @media (max-width: 48em) {
-    .components {
+}
+@media (max-width: 48em) {
+  .header--video {
+    gap: 30px;
+    flex-direction: column-reverse;
 
-      .cards {
-        flex-wrap: wrap;
-        //gap: 1rem;
+    .iframe-ctn {
+      max-width: 500px;
+      max-height: 270px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      iframe {
+        width: 300px;
+        height: 270px;
+      }
+
+    }
+    .scrolly {
+     width:300px;
+      height: 270px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      overflow-y: scroll;
+       .vid{
+        width: 200px;
+        height: 100px;
+        }
+
+    }
+  }
+
+  .components {
+
+    .cards {
+
+      flex-wrap: wrap;
+      //gap: 1rem;
+      app-prog-card{
+        width: 100%;
+        height: auto;
       }
     }
   }
 }
 
+@media (max-width: 27em) {
+  .header--video {
+    gap: 20px;
+    flex-direction: column-reverse;
+
+    .iframe-ctn {
+      max-width: 300px;
+      max-height: 270px;
+
+      iframe {
+        width: 300px;
+        height: 270px;
+      }
+
+    }
+  }
+}

@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { CardVideo } from 'src/app/models/card-video.model';
-import { ProgCard } from '../models/prog-card.model';
-import { ProgrammeComponent } from '../programme/programme.component';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {CardVideo} from 'src/app/models/card-video.model';
+import {ProgCard} from '../models/prog-card.model';
 
 
 @Component({
@@ -11,25 +10,34 @@ import { ProgrammeComponent } from '../programme/programme.component';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit{
-   // Declaration des Cards des PROGRAMMES
-   progCard1!: ProgCard;
-   progCard2!: ProgCard;
-   progCard3!: ProgCard;
-   progCard4!: ProgCard;
- 
-   // Declaration des Cards des VIDEOS
-   cardVideo1!: CardVideo;
-   cardVideo2!: CardVideo;
-   cardVideo3!: CardVideo;
-   cardVideo4!: CardVideo;
-   cardVideo5!: CardVideo;
-   cardVideo6!: CardVideo;
-   cardVideo7!: CardVideo;
-   cardVideo8!: CardVideo;
- 
+
+ // Declaration des Cards des PROGRAMMES
+ progCard1!: ProgCard;
+ progCard2!: ProgCard;
+ progCard3!: ProgCard;
+ progCard4!: ProgCard;
+ progCard5!: ProgCard;
+ progCard6!: ProgCard;
+ progCard7!: ProgCard;
+ progCard8!: ProgCard;
+ progCard9!: ProgCard;
+ progCard10!: ProgCard;
+ progCard11!: ProgCard;
+
+ // Declaration des Cards des VIDEOS
+ cardVideo1!: CardVideo;
+ cardVideo2!: CardVideo;
+ cardVideo3!: CardVideo;
+ cardVideo4!: CardVideo;
+ cardVideo5!: CardVideo;
+ cardVideo6!: CardVideo;
+ cardVideo7!: CardVideo;
+ cardVideo8!: CardVideo;
+
+
   ngOnInit() {
-      window.scrollTo(0, 0);
-    
+    window.scrollTo(0, 0);
+
     // AIzaSyAuNzmHr2U2naJQJwm8LCyowx6PeEFNST
     const titreVideo = document.getElementById('video__title');
     const titreDescription = document.getElementById('video__description');
@@ -60,86 +68,70 @@ export class HomeComponent implements OnInit{
     };
     xhr.send();
 
-     // Appel des cartes des programmes
-     this.progCard2 = new ProgCard(
-      './assets/image/arch.webp',
-      'Arche de Noé'
-    );
-    this.progCard1 = new ProgCard(
-      './assets/image/jardin.webp',
-      'Le Jardin d Eden'
-    );
+    // Appel des cartes des programmes
+    this.progCard1 = {
+      id:1,
+      progCardImg: './assets/image/jardin.webp',
+      progCardTitle: 'Le Jardin d Eden'
+    }
+    ;
+     this.progCard2 =
+       {
+        id:2,
+         progCardImg: './assets/image/arch.webp',
+         progCardTitle: 'Arche de Noé'
+       }
+     ;
 
-    this.progCard3 = new ProgCard(
-      './assets/image/3m.webp',
-      'Mashia Messie Mahdi'
-    );
-    this.progCard4 = new ProgCard(
-      './assets/image/b.webp',
-      'Le Bâton de Moïse'
-    );
-
-
-
-    // // Appel des cartes des Vidéos
-
-    // this.cardVideo1 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre1',
-    //   '30:24',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-
-    // this.cardVideo2 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre2',
-    //   '30:24',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-
-    // this.cardVideo3 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre3',
-    //   '30:24',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-
-    // this.cardVideo4 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre4',
-    //   '30:24',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-
-    // this.cardVideo5 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre5',
-    //   '30:24',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-
-    // this.cardVideo6 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre6',
-    //   '30:24',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-
-    // this.cardVideo7 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre7',
-    //   '45:04',
-    //   'Lorem, ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
-    // this.cardVideo8 = new CardVideo(
-    //   'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    //   'Titre8',
-    //   '15:54',
-    //   'ipsum dolor sit Lorem, ipsum dolor sit'
-    // );
+     this.progCard3 = {
+      id:3,
+       progCardImg: './assets/image/rct.webp',
+       progCardTitle: 'Royaume des Cieux et de la Terre'
+     }
+     ;
+     this.progCard4 = {
+      id:4,
+       progCardImg: './assets/image/b.webp',
+       progCardTitle: 'Le Bâton de Moïse}',
+     };
+     this.progCard5 = {
+      id:5,
+      progCardImg: './assets/image/christ.webp',
+      progCardTitle: 'Le Christ',
+    };
+    this.progCard6 = {
+      id:6,
+      progCardImg: './assets/image/sceau.webp',
+      progCardTitle: 'Sceau des Prophetes',
+    };
+    this.progCard7 = {
+      id:7,
+      progCardImg: './assets/image/3m.webp',
+      progCardTitle: 'Mashia Messie Mahdi',
+    };
+    this.progCard8 = {
+      id:8,
+      progCardImg: './assets/image/jourreligion.webp',
+      progCardTitle: 'Jour de la Religion'
+    };
+    this.progCard9 = {
+      id:9,
+      progCardImg: './assets/image/jourdernier.webp',
+      progCardTitle: 'Jour dernier'
+    };
+    this.progCard10 = {
+      id:10,
+      progCardImg: './assets/image/resurection.webp',
+      progCardTitle: 'Resurection'
+    };
+    this.progCard11 = {
+      id:11,
+      progCardImg: './assets/image/paradis.webp',
+      progCardTitle: 'Le Paradis'
+    };
+    }
+    constructor(private router: Router){}
   }
-  constructor(private router: Router) {}
-}
 
 
 

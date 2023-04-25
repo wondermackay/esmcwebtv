@@ -25,18 +25,17 @@ header {
 
   .card-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width:1280px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
   }
-
+  
   .card {
-    position: relative;
-    width: 720px;
-    height: 330px;
-    cursor: pointer;
+    width: calc(33.33% - 10px); /* Set width to 33.33% of the container minus 10px for margin */
+    margin-bottom: 20px;
   }
+  
 
   .card-image {
     position: absolute;
@@ -90,40 +89,68 @@ header {
     color: #fff;
   }
 
-  @media screen and (max-width: 1024px) {
-    .card-container {
-      max-width: 768px;
-    }
-    .card {
-      width: 100%;
-    }
+//   @media screen and (max-width: 1024px) {
+//     .card-container {
+//       max-width: 768px;
+//     }
+//     .card {
+//       width: 100%;
+//     }
+//   }
+
+//   @media screen and (max-width: 768px) {
+//     .card-container {
+//       max-width: 700px;
+//       //flex-direction: column;
+//       //align-items: center;
+//       //gap: 10px;
+//       //margin: 0 auto;
+//       //padding: 0 10px;
+//       //overflow-x: hidden;
+//     }
+//     .card {
+//       height: 200px;
+//     }
+//     .card-overlay {
+//       padding: 10px;
+//       font-size: 14px;
+//     }
+//     .card-overlay h2 {
+//       font-size: 20px;
+//     }
+//   }
+
+//   @media screen and (max-width: 480px) {
+//     .card-container {
+//       flex-direction: column;
+
+//       max-width: 320px;
+// } }
+
+
+.cards {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    gap: 1rem 2rem;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .card-container {
-      max-width: 700px;
-      //flex-direction: column;
-      //align-items: center;
-      //gap: 10px;
-      //margin: 0 auto;
-      //padding: 0 10px;
-      //overflow-x: hidden;
-    }
-    .card {
-      height: 200px;
-    }
-    .card-overlay {
-      padding: 10px;
-      font-size: 14px;
-    }
-    .card-overlay h2 {
-      font-size: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    gap: 1rem;
   }
+}
 
-  @media screen and (max-width: 480px) {
-    .card-container {
-      flex-direction: column;
+@media screen and (max-width: 480px) {
+  .cards {
+    gap: 0.5rem;
+  }
+}
 
-      max-width: 320px;
-} }

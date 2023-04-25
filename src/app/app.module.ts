@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { PageVideoComponent } from './page-video/page-video.component';
+import { LiveComponent } from './live/live.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageVideoComponent } from './page-video/page-video.component';
     ProgCardComponent,
     HomeComponent,
     ProgrammeComponent,
-    PageVideoComponent
+    PageVideoComponent,
+    LiveComponent
   ],
   imports: [
     BrowserModule,

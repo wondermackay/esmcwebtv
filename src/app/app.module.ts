@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { PageVideoComponent } from './page-video/page-video.component';
 import { LiveComponent } from './live/live.component';
+import {NgxYoutubePlayerModule} from "ngx-youtube-player";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LiveComponent } from './live/live.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxYoutubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

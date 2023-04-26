@@ -12,7 +12,9 @@ export class PageVideoComponent implements OnInit {
   videoLink:any;
   id!:number;
   idProg!:number;
-
+  showYoutubePlayer = false;
+  videoId =  "Q2tNZAjWXec";
+  displayLive = true;
   constructor(private route: ActivatedRoute) {}
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -120,4 +122,43 @@ export class PageVideoComponent implements OnInit {
       console.log(videoIds);
     });
   }
+
+  playEpisode1() {
+    this.videoId = 'Q2tNZAjWXec'
+    this.displayLive = false;
+
+    this.showYoutubePlayer = false;
+    setTimeout(() => {
+      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
+    }, 500);
+  };
+
+  playEpisode2() {
+    this.videoId = 'F_0r1QDkUBs';
+    this.displayLive = false;
+
+    this.showYoutubePlayer = false;
+    setTimeout(() => {
+      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
+    }, 500);
+  }
+
+  playEpisode3() {
+    this.videoId = 'Z4TIxBiAkp8';
+    this.displayLive = false;
+    this.showYoutubePlayer = false;
+    setTimeout(() => {
+      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
+    }, 500);
+  }
+
+  playEpisode4() {
+    this.videoId = 'KVZvuOGkeNs'
+    this.displayLive = false;
+    this.showYoutubePlayer = false;
+    setTimeout(() => {
+      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
+    }, 500);
+  }
+
 }

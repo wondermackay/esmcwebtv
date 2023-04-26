@@ -13,30 +13,39 @@
     </header>
    <div *ngIf="idProg==1">
     <div class="player-container">
-      <div class="player">
+      <div class="player" *ngIf="displayLive">
         <iframe width="920" height="515"
                 src="https://player.viloud.tv/embed/channel/3f5ac893edbf03549d94062c80340a4a"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
       </div>
+      <div class="player" *ngIf="showYoutubePlayer">
+        <youtube-player
+          [videoId]="videoId"
+          [width]="920"
+          [height]="515"
+          [playerVars]="{ cc_lang_pref: 'en' }"
+        >
+        </youtube-player>
+      </div>
 
     </div>
 
     <div class="row">
-      <div class="card">
-        <img src="https://source.unsplash.com/500x500/?nature"  alt="Card image">
+      <div class="card" (click)="playEpisode1()">
+        <img src="../../assets/image/Episode1.jpg"  alt="Card image">
         <h5>Episode 1</h5>
       </div>
-      <div class="card">
+      <div class="card" (click)="playEpisode2()">
         <img src="https://source.unsplash.com/500x500/?animals" alt="Card image">
         <h5>Episode 2</h5>
       </div>
-      <div class="card">
+      <div class="card" (click)="playEpisode3()">
         <img src="https://source.unsplash.com/500x500/?food" alt="Card image">
         <h5>Episode 3</h5>
       </div>
-      <div class="card">
+      <div class="card" (click)="playEpisode4()">
         <img src="https://source.unsplash.com/500x500/?travel" alt="Card image">
         <h5>Episode dd</h5>
       </div>

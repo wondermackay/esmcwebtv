@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     this.progCard1 = {
       id:1,
       progCardImg: './assets/image/jardin.webp',
-      progCardTitle: 'Le Jardin d Eden'
+      progCardTitle: 'Le Jardin d\'Eden'
     }
     ;
      this.progCard2 =

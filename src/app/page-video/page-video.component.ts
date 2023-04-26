@@ -24,7 +24,7 @@ export class PageVideoComponent implements OnInit {
       if(id==1){
         this.episodes=[
           this.idProg=1,
-          this.title='Le Jardin d Eden',
+          this.title='Le Jardin d\'Eden',
         ]
       }
       if(id==2){

@@ -1,39 +1,36 @@
-import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
-import {CardVideo} from 'src/app/models/card-video.model';
-import {ProgCard} from '../models/prog-card.model';
-
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CardVideo } from 'src/app/models/card-video.model';
+import { ProgCard } from '../models/prog-card.model';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
+  // Declaration des Cards des PROGRAMMES
+  progCard1!: ProgCard;
+  progCard2!: ProgCard;
+  progCard3!: ProgCard;
+  progCard4!: ProgCard;
+  progCard5!: ProgCard;
+  progCard6!: ProgCard;
+  progCard7!: ProgCard;
+  progCard8!: ProgCard;
+  progCard9!: ProgCard;
+  progCard10!: ProgCard;
+  progCard11!: ProgCard;
 
- // Declaration des Cards des PROGRAMMES
- progCard1!: ProgCard;
- progCard2!: ProgCard;
- progCard3!: ProgCard;
- progCard4!: ProgCard;
- progCard5!: ProgCard;
- progCard6!: ProgCard;
- progCard7!: ProgCard;
- progCard8!: ProgCard;
- progCard9!: ProgCard;
- progCard10!: ProgCard;
- progCard11!: ProgCard;
-
- // Declaration des Cards des VIDEOS
- cardVideo1!: CardVideo;
- cardVideo2!: CardVideo;
- cardVideo3!: CardVideo;
- cardVideo4!: CardVideo;
- cardVideo5!: CardVideo;
- cardVideo6!: CardVideo;
- cardVideo7!: CardVideo;
- cardVideo8!: CardVideo;
-
+  // Declaration des Cards des VIDEOS
+  cardVideo1!: CardVideo;
+  cardVideo2!: CardVideo;
+  cardVideo3!: CardVideo;
+  cardVideo4!: CardVideo;
+  cardVideo5!: CardVideo;
+  cardVideo6!: CardVideo;
+  cardVideo7!: CardVideo;
+  cardVideo8!: CardVideo;
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -70,68 +67,61 @@ export class HomeComponent implements OnInit{
 
     // Appel des cartes des programmes
     this.progCard1 = {
-      id:1,
+      id: 1,
       progCardImg: './assets/image/jardin.webp',
-      progCardTitle: 'Le Jardin d Eden'
-    }
-    ;
-     this.progCard2 =
-       {
-        id:2,
-         progCardImg: './assets/image/arch.webp',
-         progCardTitle: 'Arche de Noé'
-       }
-     ;
+      progCardTitle: "Le Jardin d'Eden",
+    };
+    this.progCard2 = {
+      id: 2,
+      progCardImg: './assets/image/arch.webp',
+      progCardTitle: 'Arche de Noé',
+    };
 
-     this.progCard3 = {
-      id:3,
-       progCardImg: './assets/image/rct.webp',
-       progCardTitle: 'Royaume des Cieux et de la Terre'
-     }
-     ;
-     this.progCard4 = {
-      id:4,
-       progCardImg: './assets/image/b.webp',
-       progCardTitle: 'Le Bâton de Moïse}',
-     };
-     this.progCard5 = {
-      id:5,
+    this.progCard3 = {
+      id: 3,
+      progCardImg: './assets/image/rct.webp',
+      progCardTitle: 'Royaume des Cieux et de la Terre',
+    };
+    this.progCard4 = {
+      id: 4,
+      progCardImg: './assets/image/b.webp',
+      progCardTitle: 'Le Bâton de Moïse',
+    };
+    this.progCard5 = {
+      id: 5,
       progCardImg: './assets/image/christ.webp',
       progCardTitle: 'Le Christ',
     };
     this.progCard6 = {
-      id:6,
+      id: 6,
       progCardImg: './assets/image/sceau.webp',
       progCardTitle: 'Sceau des Prophetes',
     };
     this.progCard7 = {
-      id:7,
+      id: 7,
       progCardImg: './assets/image/3m.webp',
       progCardTitle: 'Mashia Messie Mahdi',
     };
     this.progCard8 = {
-      id:8,
+      id: 8,
       progCardImg: './assets/image/jourreligion.webp',
-      progCardTitle: 'Jour de la Religion'
+      progCardTitle: 'Jour de la Religion',
     };
     this.progCard9 = {
-      id:9,
+      id: 9,
       progCardImg: './assets/image/jourdernier.webp',
-      progCardTitle: 'Jour dernier'
+      progCardTitle: 'Jour dernier',
     };
     this.progCard10 = {
-      id:10,
+      id: 10,
       progCardImg: './assets/image/resurection.webp',
-      progCardTitle: 'Resurection'
+      progCardTitle: 'Resurection',
     };
     this.progCard11 = {
-      id:11,
+      id: 11,
       progCardImg: './assets/image/paradis.webp',
-      progCardTitle: 'Le Paradis'
+      progCardTitle: 'Le Paradis',
     };
-    }
-    constructor(private router: Router){}
   }
-
-
-
+  constructor(private router: Router) {}
+}

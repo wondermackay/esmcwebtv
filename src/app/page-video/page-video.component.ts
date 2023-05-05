@@ -137,4 +137,8 @@ export class PageVideoComponent implements OnInit {
       this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
     }, 500);
   }
+  windowScrolled = false;
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+  }
 }

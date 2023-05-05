@@ -12,17 +12,18 @@ ul.nav {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 3rem;
 }
 
 .card {
   width: 250px;
-  height: 150px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  border: none;
 }
 
 .card:hover {
@@ -31,7 +32,7 @@ ul.nav {
 
 .card img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -67,8 +68,7 @@ header {
 
 .vid--ctn {
   .frame-ctn {
-    iframe,
-    .youtube-player > iframe {
+    iframe {
       width: 40rem;
       height: 25rem;
     }
@@ -92,8 +92,20 @@ header {
 /* Conteneur du lecteur et de la playlist */
 .player-container {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
+  position: relative;
+  // .player {
+  //   // position: absolute;
+  //   // iframe {
+  //   //   // width: 920px;
+  //   // }
+  // }
+  .testplayer {
+    // position: relative;
+    height: 32.5em;
+  }
 }
 
 /* Lecteur */
@@ -133,12 +145,18 @@ header {
   background-color: #f00;
   color: #fff;
 }
+
 @media (max-width: 48em) {
   iframe,
   youtube-player > iframe {
     width: 350px;
     height: 315px;
   }
+  // .player-container {
+  //   .testplayer {
+  //     height: 25rem;
+  //   }
+  // }
 }
 @media (max-width: 20em) {
   iframe,
@@ -146,18 +164,26 @@ header {
     width: 300px;
     height: 215px;
   }
+  // .player-container {
+  //   .testplayer {
+  //     height: 18rem;
+  //   }
+  // }
 }
 
-// .youtube-player {
-//   position: relative;
-//   width: 100%;
-//   padding-bottom: 56.25%; /* 16:9 aspect ratio */
-// }
+.to-top {
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 8px 12px 0;
+  position: fixed;
+  right: 0;
+  opacity: 1;
 
-// .youtube-player iframe {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-// }
+  background-color: #570017a1;
+  border-radius: 50%;
+}
+
+.show-scrollTop {
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
+}

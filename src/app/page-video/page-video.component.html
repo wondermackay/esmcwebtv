@@ -24,12 +24,14 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div class="player" *ngIf="showYoutubePlayer">
+      <div class="testplayer">
         <youtube-player
-          class="youtube-player"
-          [videoId]="videoId"
+          class="player youtube-player"
           width="920"
-          height="515"
+          height="500 "
+          margin="20px 0"
+          *ngIf="showYoutubePlayer"
+          [videoId]="videoId"
           [playerVars]="{ cc_lang_pref: 'en' }"
         >
         </youtube-player>
@@ -57,7 +59,7 @@
           src="https://source.unsplash.com/500x500/?travel"
           alt="Card image"
         />
-        <h5>Episode dd</h5>
+        <h5>Episode 4</h5>
       </div>
     </div>
   </div>
@@ -100,7 +102,7 @@
           src="https://source.unsplash.com/500x500/?travel"
           alt="Card image"
         />
-        <h5>Episode dd</h5>
+        <h5>Episode 4</h5>
       </div>
     </div>
   </div>
@@ -490,5 +492,21 @@
         <h5>Episode dd</h5>
       </div>
     </div>
+  </div>
+
+  <!-- ////////////////////////////////////////// -->
+  <div
+    class="to-top"
+    (click)="scrollToTop()"
+    [ngClass]="{ 'show-scrollTop': windowScrolled }"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="48"
+      viewBox="0 96 960 960"
+      width="48"
+    >
+      <path d="m280 656 200-201 200 201H280Z" />
+    </svg>
   </div>
 </body>

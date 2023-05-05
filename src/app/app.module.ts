@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { PageVideoComponent } from './page-video/page-video.component';
 import { LiveComponent } from './live/live.component';
-import {NgxYoutubePlayerModule} from "ngx-youtube-player";
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,10 @@ import {NgxYoutubePlayerModule} from "ngx-youtube-player";
     HomeComponent,
     ProgrammeComponent,
     PageVideoComponent,
-    LiveComponent
+    LiveComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgxYoutubePlayerModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

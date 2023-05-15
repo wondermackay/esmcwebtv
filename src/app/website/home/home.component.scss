@@ -1,0 +1,15 @@
+.absolute-direct {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+.top {
+  margin-top: 50px;
+}
+.fixed-bot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}

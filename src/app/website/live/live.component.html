@@ -1,0 +1,89 @@
+<app-header></app-header>
+<section class="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br />
+      </div>
+    </div>
+    <div class="row iframe" style="">
+      <div class="col-md-9" data-aos="zoom-in" data-aos-duration="1000">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0">
+          <iframe
+            src="https://player.viloud.tv/embed/channel/29823d92af1c321b486d986c09647d73?autoplay=1&volume=1&controls=1&title=1&share=1&open_playlist=0&random=0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            frameborder="0"
+            allow="autoplay"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="col-md-3 texte" style="">
+        <p>
+          <span class="text-primar font-weight-bold hashtag"
+            >#ESMC#ODD#WEBTV</span
+          >
+        </p>
+        <h5 class="mb-4 titre">
+          BIENVENUE SUR ESMC WEBTV SUIVEZ EN TEMPS RÉEL L'ACTUALITÉ
+        </h5>
+        <p class="description">
+          Suivez-nous en direct pour ne rien manquer! Rejoignez-nous dès
+          maintenant.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row justify-content-center list">
+      <div class="col-md-4 type">
+        <a class="a" (click)="listeDirect()"> En direct</a>
+        <div
+          *ngIf="id == 0"
+          class="flex"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <div class="bar">
+            <div class="bar-in"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 type" style="">
+        <a class="a" (click)="listeSuivre()">A suivre</a>
+        <div
+          *ngIf="id == 1"
+          class="flex"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <div class="bar">
+            <div class="bar-in"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 type">
+        <a class="a" (click)="listeRecent()">Récent</a>
+        <div
+          *ngIf="id == 2"
+          class="flex"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <div class="bar">
+            <div class="bar-in"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

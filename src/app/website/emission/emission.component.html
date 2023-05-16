@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<div class="programmes-tv top">
+  <h1 class="">Nos Emissions TV</h1>
+  <div class="row programmes-list">
+    <div *ngFor="let programme of programmes" class="programme custom-cursor">
+      <div class="programme-thumbnail" >
+        <a [routerLink]="['/video', programme.id]">
+          <img
+          class="img-fluid"
+          [src]="programme.thumbnail"
+          alt="Programme Thumbnail"
+        />
+        </a>
+      </div>
+      <!-- <div class="programme-details">
+        <h2 class="mt-2">{{ programme.title }}</h2>
+      </div> -->
+    </div>
+  </div>
+</div>

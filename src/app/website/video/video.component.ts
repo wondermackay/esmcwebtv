@@ -7,6 +7,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./video.component.scss']
 })
 export class VideoComponent implements OnInit {
+  langue="Fr";
 
   episodes:any=[];
   title!: string | null;
@@ -160,6 +161,18 @@ export class VideoComponent implements OnInit {
     setTimeout(() => {
       this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
     }, 500);
+  }
+  videoFr(){
+    this.langue="Fr";
+  }
+  videoKo(){
+    this.langue="Ko";
+  }
+  videoKa(){
+    this.langue="Ka";
+  }
+  videoEw(){
+    this.langue="Ew";
   }
 
 }

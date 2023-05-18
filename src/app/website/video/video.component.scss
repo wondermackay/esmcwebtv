@@ -13,13 +13,35 @@ iframe {
 .a{
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: black;
   cursor: pointer;
   &:focus{
     color: red;
   }
+  &:hover{
+    color: #ae3764;
+  }
 }
-
+.navLang{
+  color: black;
+  font-weight: 600;
+  margin-top: 2%;
+}
+.iframe{
+  margin-left: -15%;
+}
+.texte{
+  padding:10% 0 0 2%;
+  .hashtag{
+    color: #ae3764;
+    }
+    .titre{
+    font-weight: 600;
+    }
+    .description{
+      font-size: 18px;
+    }
+}
 .cards {
   width: 80%;
 }

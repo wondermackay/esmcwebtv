@@ -11,6 +11,7 @@ import { CardEmissionComponent } from './website/home/card-emission/card-emissio
 import { EmissionComponent } from './website/emission/emission.component';
 import { VideoComponent } from './website/video/video.component';
 import { LiveComponent } from './website/live/live.component';
+import { CardEpisodeComponent } from './website/video/card-episode/card-episode.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LiveComponent } from './website/live/live.component';
     CardEmissionComponent,
     EmissionComponent,
     VideoComponent,
-    LiveComponent
+    LiveComponent,
+    CardEpisodeComponent
   ],
   imports: [
     BrowserModule,

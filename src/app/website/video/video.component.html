@@ -55,13 +55,19 @@
                 class="player my-4 position-absolute"
                 *ngIf="showYoutubePlayer"
               >
-                <iframe
+                <youtube-player
+                  [videoId]="videoId"
+                  [width]="920"
+                  [height]="515"
+                >
+                </youtube-player>
+                <!-- <iframe
                   src="https://www.youtube.com/embed/PWmJhh_qTSY"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
-                ></iframe>
+                ></iframe> -->
               </div>
             </div>
           </div>

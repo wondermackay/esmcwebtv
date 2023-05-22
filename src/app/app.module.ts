@@ -12,7 +12,7 @@ import { EmissionComponent } from './website/emission/emission.component';
 import { VideoComponent } from './website/video/video.component';
 import { LiveComponent } from './website/live/live.component';
 import { CardEpisodeComponent } from './website/video/card-episode/card-episode.component';
-
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +24,10 @@ import { CardEpisodeComponent } from './website/video/card-episode/card-episode.
     EmissionComponent,
     VideoComponent,
     LiveComponent,
-    CardEpisodeComponent
+    CardEpisodeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

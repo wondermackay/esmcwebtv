@@ -1,4 +1,3 @@
-import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

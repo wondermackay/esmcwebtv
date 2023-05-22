@@ -1,7 +1,5 @@
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-// import { NgxYoutubePlayerModule } from '../../../../node_modules/ngx-youtube-player/lib/ngx-youtube-player.module';
-// import { YoutubePlayerComponent } from '../../../../node_modules/ngx-youtube-player/lib/ngx-youtube-player.component';
 
 @Component({
   selector: 'app-video',
@@ -106,9 +104,14 @@ export class VideoComponent implements OnInit {
       console.log(this.video_ids);
     });
   }
-  changeVideo() {
+  changeVideo(id: string) {
+    this.videoId = id;
     this.showVideoPlayer = false;
-    this.showYoutubePlayer = true;
+    this.showYoutubePlayer = false;
+    setTimeout(() => {
+      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
+    }, 500);
+    console.log(id);
   }
 
   playEpisode1() {
@@ -161,7 +164,3 @@ export class VideoComponent implements OnInit {
     this.langue = 'Ew';
   }
 }
-// @NgModule({
-//   imports: [NgxYoutubePlayerModule],
-// })
-// export class VideoModule {}

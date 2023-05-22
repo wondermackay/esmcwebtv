@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+// import { NgxYoutubePlayerModule } from '../../../../node_modules/ngx-youtube-player/lib/ngx-youtube-player.module';
+// import { YoutubePlayerComponent } from '../../../../node_modules/ngx-youtube-player/lib/ngx-youtube-player.component';
 
 @Component({
   selector: 'app-video',
@@ -159,3 +161,7 @@ export class VideoComponent implements OnInit {
     this.langue = 'Ew';
   }
 }
+// @NgModule({
+//   imports: [NgxYoutubePlayerModule],
+// })
+// export class VideoModule {}

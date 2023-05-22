@@ -1,3 +1,4 @@
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,13 +25,10 @@ import { CardEpisodeComponent } from './website/video/card-episode/card-episode.
     EmissionComponent,
     VideoComponent,
     LiveComponent,
-    CardEpisodeComponent
+    CardEpisodeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

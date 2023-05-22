@@ -42,13 +42,20 @@
                 class="player my-4 position-absolute"
                 *ngIf="showVideoPlayer"
               >
-                <iframe
+                <youtube-player
+                  [videoId]="videoId"
+                  [width]="920"
+                  [height]="515"
+                  [playerVars]="{ cc_lang_pref: 'en' }"
+                >
+                </youtube-player>
+                <!-- <iframe
                   src="https://player.viloud.tv/embed/channel/3f5ac893edbf03549d94062c80340a4a"
                   frameborder="0"
                   allow="autoplay"
                   allowfullscreen
                 >
-                </iframe>
+                </iframe> -->
               </div>
               <!-- VIDEO YOUTUBE -->
               <div

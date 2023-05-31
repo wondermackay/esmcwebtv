@@ -13,6 +13,9 @@ import { VideoComponent } from './website/video/video.component';
 import { LiveComponent } from './website/live/live.component';
 import { CardEpisodeComponent } from './website/video/card-episode/card-episode.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+import { AuthComponent } from './website/auth/auth.component';
+import { LoginComponent } from './website/auth/login/login.component';
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +28,10 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
     VideoComponent,
     LiveComponent,
     CardEpisodeComponent,
+    AuthComponent,
+    LoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule],
+    imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

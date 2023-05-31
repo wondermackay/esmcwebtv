@@ -1,0 +1,44 @@
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong">
+          <div class="card-body p-5">
+            <h3 class="mb-5 text-center">Connection</h3>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typeEmailX-2">Nom:</label>
+              <input
+                type="text"
+                id="nomm"
+                class="form-control form-control-lg"
+                [(ngModel)]="inputName"
+              />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typePasswordX-2"
+                >Mot de passe:</label
+              >
+              <input
+                type="password"
+                id="typePasswordX-2"
+                class="form-control form-control-lg"
+                [(ngModel)]="inputPwd"
+              />
+            </div>
+            <div class="text-center">
+              <button
+                class="btn btn-custum btn-lg btn-block text-center px-4 py-2"
+                type="submit"
+                (click)="getNom()"
+              >
+                Se Connecter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

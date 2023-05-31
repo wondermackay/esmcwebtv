@@ -1,0 +1,24 @@
+section {
+  background-image: url("../../../../assets/image/background_login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+}
+.card {
+  border-radius: 1rem;
+  background-color: #ae3764;
+}
+.btn-custum {
+  border-radius: 2rem;
+
+  color: #ae3764;
+  background-color: white;
+}
+.btn-custum:hover {
+  border-radius: 2rem;
+
+  background-color: #ae3764;
+  border: 1px solid black;
+  color: white;
+}

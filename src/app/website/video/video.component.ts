@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-video',
@@ -18,8 +19,12 @@ export class VideoComponent implements OnInit {
   showYoutubePlayer = false;
   videoId = 'Q2tNZAjWXec';
   displayLive = true;
-  constructor(private route: ActivatedRoute) {}
+  iframeSrc!: SafeResourceUrl ;
+
+  constructor(private route: ActivatedRoute, private  sanitizer: DomSanitizer) {}
+  liveUrl:string = 'https://player.viloud.tv/embed/channel/3f5ac893edbf03549d94062c80340a4a'
   ngOnInit() {
+    this.iframeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.liveUrl)
     window.scrollTo(0, 0);
     // this.title = this.route.snapshot.paramMap.get('title');
     let id = this.route.snapshot.params['id'];
@@ -105,13 +110,22 @@ export class VideoComponent implements OnInit {
     });
   }
   changeVideo(id: string) {
-    this.videoId = id;
-    this.showVideoPlayer = false;
-    this.showYoutubePlayer = false;
-    setTimeout(() => {
-      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
-    }, 500);
-    console.log(id);
+    // this.videoId = id;
+    // this.showVideoPlayer = false;
+    // this.showYoutubePlayer = false;
+    // setTimeout(() => {
+    //   this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
+    // }, 500);
+    // console.log(id);
+    this.liveUrl = 'https://www.youtube.com/embed/'+id;
+      this.iframeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.liveUrl);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+
+
   }
 
   playEpisode1() {

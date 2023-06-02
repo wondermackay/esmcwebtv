@@ -34,17 +34,16 @@
     </div>
     <div class="row iframe" style="margin-top: -3%">
       <div class="col-md-9" data-aos="zoom-in" data-aos-duration="1000">
-        <div style="position: relative; padding-bottom: 51%; height: 0">
+        <div >
           <div *ngIf="langue == 'Fr'">
-            <div *ngIf="idProg == 1" class="position-relative">
+            <div *ngIf="idProg == 1" >
               <!-- VIDEO LIVE -->
               <div
-                class="player my-4 position-absolute"
-                *ngIf="showVideoPlayer"
+                class="player my-4 "
+
               >
                 <iframe
-                  src="https://player.viloud.tv/embed/channel/3f5ac893edbf03549d94062c80340a4a"
-                  frameborder="0"
+                  [src]="iframeSrc"
                   allow="autoplay"
                   allowfullscreen
                 >
@@ -475,7 +474,7 @@
         <h5 class="mb-4 titre">LA PLAYLIST ENTIERE DE L'EMISSION</h5>
 
         <!-- AJOUT DES CARTES  -->
-        <!-- 
+        <!--
         <div class="col" *ngFor="let vid of video_ids">
           <div class="card">
             <a class="a" [href]="['https://youtu.be/' + vid]">
@@ -491,7 +490,7 @@
           </div>
         </div> -->
         <!-- CARDS EPISODE -->
-        <div class="col g-4 mb-4 cards">
+        <div class="col mx-auto cards">
           <app-card-episode
             *ngFor="let vid of video_ids"
             (click)="changeVideo(vid)"

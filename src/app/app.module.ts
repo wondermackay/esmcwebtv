@@ -16,6 +16,7 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { AuthComponent } from './website/auth/auth.component';
 import { LoginComponent } from './website/auth/login/login.component';
 import {FormsModule} from "@angular/forms";
+import {NgOptimizedImage} from "@angular/common";
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,7 @@ import {FormsModule} from "@angular/forms";
     AuthComponent,
     LoginComponent,
   ],
-    imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule],
+    imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule, NgOptimizedImage],
   providers: [],
   bootstrap: [AppComponent],
 })

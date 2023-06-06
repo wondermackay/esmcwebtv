@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       (this.inputName == 'admin2' && this.inputPwd == 'admin21')
     ) {
       console.log('tchiiiiiiii');
-      this.router.navigate(['/home']);
+      this.router.navigate(['/dash']);
     }
     console.log(this.inputName, this.inputPwd);
   }

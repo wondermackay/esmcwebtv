@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
     // var inputName: any = document.getElementById('nomm')!.ariaValueMax;
     // alert(inputName);
     if (
-      (this.inputName == 'admin1' && this.inputPwd == 'admin12') ||
-      (this.inputName == 'admin2' && this.inputPwd == 'admin21')
+      (this.inputName === 'admin1' && this.inputPwd === 'admin12') ||
+      (this.inputName === 'admin2' && this.inputPwd === 'admin21')
     ) {
       console.log('tchiiiiiiii');
       this.router.navigate(['/home']);

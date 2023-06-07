@@ -8,11 +8,11 @@ import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
   styleUrls: ['./video.component.scss'],
 })
 export class VideoComponent implements OnInit {
-  langue = 'Fr';
+  language = 'Fr';
   video_ids: any[] | undefined;
   episodes: any = [];
   title!: string | null;
-  videoLink: any;
+  videoLink: any
   id!: number;
   idProg!: number;
   showVideoPlayer = true;
@@ -166,15 +166,15 @@ export class VideoComponent implements OnInit {
     }, 500);
   }
   videoFr() {
-    this.langue = 'Fr';
+    this.language = 'Fr';
   }
   videoKo() {
-    this.langue = 'Ko';
+    this.language = 'Ko';
   }
   videoKa() {
-    this.langue = 'Ka';
+    this.language = 'Ka';
   }
   videoEw() {
-    this.langue = 'Ew';
+    this.language = 'Ew';
   }
 }

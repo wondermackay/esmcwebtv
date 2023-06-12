@@ -17,6 +17,7 @@ import { AuthComponent } from './website/auth/auth.component';
 import { LoginComponent } from './website/auth/login/login.component';
 import {FormsModule} from "@angular/forms";
 import {NgOptimizedImage} from "@angular/common";
+import { MediaComponent } from './website/media/media/media.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import {NgOptimizedImage} from "@angular/common";
     CardEpisodeComponent,
     AuthComponent,
     LoginComponent,
+    MediaComponent,
   ],
     imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule, NgOptimizedImage],
   providers: [],

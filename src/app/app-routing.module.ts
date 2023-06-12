@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'live', component: LiveComponent },
   { path: 'auth', component: AuthComponent },
   { path: 'login', component: LoginComponent },
-  {path: 'media', component: MediaComponent}
+  {path: 'media', component: MediaComponent},
   { path: 'dash', component: DashboardComponent },
   { path: 'uploading', component: UploadingComponent },
   { path: 'video-uploade', component: VideouploadeComponent },

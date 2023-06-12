@@ -24,8 +24,9 @@ section{
 }
 
 .btn-circle{
-  padding: 0.8rem;
+  padding: 0.4rem;
   border-radius: 50%;
+
 }
 
 svg{
@@ -35,7 +36,7 @@ svg{
   position: relative;
 }
 .link-sub {
-  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  padding: 0.6rem 1.5rem 0.6rem 3.5rem;
   border-radius: 2rem;
   font-weight: 600;
 }
@@ -45,7 +46,7 @@ svg{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0rem auto;
 }
 

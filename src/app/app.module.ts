@@ -16,9 +16,12 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { AuthComponent } from './website/auth/auth.component';
 import { LoginComponent } from './website/auth/login/login.component';
 import {FormsModule} from "@angular/forms";
+import {NgOptimizedImage} from "@angular/common";
+import { MediaComponent } from './website/media/media/media.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UploadingComponent } from './admin/uploading/uploading.component';
 import { VideouploadeComponent } from './admin/videouploade/videouploade.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,11 +36,12 @@ import { VideouploadeComponent } from './admin/videouploade/videouploade.compone
     CardEpisodeComponent,
     AuthComponent,
     LoginComponent,
+    MediaComponent,
     DashboardComponent,
     UploadingComponent,
     VideouploadeComponent,
   ],
-    imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule],
+    imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule, NgOptimizedImage],
   providers: [],
   bootstrap: [AppComponent],
 })

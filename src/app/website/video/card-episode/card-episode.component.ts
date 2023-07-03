@@ -8,7 +8,11 @@ import { CardEpisode } from 'src/app/modeles/card_episode.model';
 })
 export class CardEpisodeComponent implements OnInit {
   @Input() cardEpisode!: CardEpisode;
+  episodeNum!: Number;
+  ngOnInit(): void {
+    this.episodeNum = 1
+  }
 
-  ngOnInit(): void {}
+
 }
 export { CardEpisode };

@@ -12,13 +12,10 @@ export class VideoComponent implements OnInit {
   video_ids: any[] | undefined;
   episodes: any = [];
   title!: string | null;
-  videoLink: any
   id!: number;
   idProg!: number;
-  showVideoPlayer = true;
-  showYoutubePlayer = false;
-  videoId = 'Q2tNZAjWXec';
-  displayLive = true;
+  // videoId = 'Q2tNZAjWXec';
+  // displayLive = true;
   iframeSrc!: SafeResourceUrl ;
 
   constructor(private route: ActivatedRoute, private  sanitizer: DomSanitizer) {}
@@ -110,60 +107,13 @@ export class VideoComponent implements OnInit {
     });
   }
   changeVideo(id: string) {
-    // this.videoId = id;
-    // this.showVideoPlayer = false;
-    // this.showYoutubePlayer = false;
-    // setTimeout(() => {
-    //   this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
-    // }, 500);
-    // console.log(id);
     this.liveUrl = 'https://www.youtube.com/embed/'+id;
       this.iframeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.liveUrl);
     window.scroll({
-      top: 0,
+      top: 150,
       left: 0,
       behavior: 'smooth'
     });
-
-
-  }
-
-  playEpisode1() {
-    this.videoId = 'Q2tNZAjWXec';
-    this.displayLive = false;
-
-    this.showYoutubePlayer = false;
-    setTimeout(() => {
-      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
-    }, 500);
-  }
-
-  playEpisode2() {
-    this.videoId = 'F_0r1QDkUBs';
-    this.displayLive = false;
-
-    this.showYoutubePlayer = false;
-    setTimeout(() => {
-      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
-    }, 500);
-  }
-
-  playEpisode3() {
-    this.videoId = 'Z4TIxBiAkp8';
-    this.displayLive = false;
-    this.showYoutubePlayer = false;
-    setTimeout(() => {
-      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
-    }, 500);
-  }
-
-  playEpisode4() {
-    this.videoId = 'KVZvuOGkeNs';
-    this.displayLive = false;
-    this.showYoutubePlayer = false;
-    setTimeout(() => {
-      this.showYoutubePlayer = true; // Afficher le composant youtube-player à nouveau après 500ms
-    }, 500);
   }
   videoFr() {
     this.language = 'Fr';

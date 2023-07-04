@@ -1,0 +1,133 @@
+.contenu{
+    .entete1{
+        color: #272224;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+    .entete2{
+        color: #8A7B80;
+        font-size: 21px;
+    }
+    .entete3{
+        color: #272224;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .entete4{
+        color: #8A7B80;
+        font-size: 14px;
+    }
+    .circle1{
+        /* background-color: #ae3764;
+        color: #fff;
+        height:30px;
+        width: 30px;
+        border-radius: 5%; */
+        hr{
+            width: 150px;
+            size:10;
+            color: #E3E3E3;
+        }
+       
+    }
+    .text1{
+        width: 100px;
+        color: #ae3764;
+        font-weight: 600;
+        margin-left:20%;
+        text-align: center;
+    }
+    .text2{
+        color: #513C43;
+        font-weight: 600;
+        margin-left:-70%;
+        width: 100px;
+        text-align: center;
+    }
+    .text3{
+        width: 100px;   
+        color: #513C43;
+        font-weight: 600;
+        margin-left:20%;
+        text-align: center;
+    }
+    .text4{
+        color: #ae3764;
+        font-weight: 600;
+        margin-left:-70%;
+        width: 100px;
+        text-align: center;
+    }
+    .text5{
+        color: #272224;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 4%;
+    }
+    .rowliste{
+        border: solid 0.1em;
+        border-color: #DEDCDC;
+        border-radius: 2%;
+        border-right-color: #fff;
+        height: 70px;
+    }
+    .rowbutt{
+        border: solid 0.1em;
+        border-color: #DEDCDC;
+        border-radius: 2%;
+        border-left-color: #fff;
+        height: 70px;
+        margin-left:-2%;
+        .btnaction1{
+            background-color: #ae3764;
+        }
+        .btnaction2{
+            background-color: #E3E3E3;
+            margin-left: 12%;
+        }
+    }
+    .titlef{
+        color: #272224;
+        font-size: 14px;
+    }
+    .titles{
+        color: #8A7B80;
+        font-size: 12px;
+       
+    }
+    .but2{
+        color: #fff;
+        font-weight: 600;
+        background-color: #ae3764;
+    }
+    .btnl{
+        color: #fff;
+        font-weight: 600;
+        background-color: #ae3764;
+        font-size: 16px;
+        height: 60px;
+        width: 220px;
+    }
+    .step1{
+        background-color: #EFEFEF;
+        border-radius: 2%;
+        padding: 0 0 0 3%;
+        height: 220px;
+        .tit1{
+            margin-top: 8%;
+            color: #513C43;
+            size: 18px;
+            font-weight: 600;
+        }
+        .inp1{
+            margin-top: 7%;
+            width: 90%;
+        }
+        .but1{
+            margin-top: 7%;
+            color: #fff;
+            font-weight: 600;
+            background-color: #ae3764;
+        }
+    }
+}

@@ -9,11 +9,12 @@ import { LoginComponent } from './website/auth/login/login.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UploadingComponent } from './admin/uploading/uploading.component';
 import { VideouploadeComponent } from './admin/videouploade/videouploade.component';
+import { MiseEnExamenComponent } from './admin/dashboard/visualisation/mise-en-examen/mise-en-examen.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'emission', component: EmissionComponent },
+  { path: 'emission', component: EmissionComponent }, 
   { path: 'video/:id', component: VideoComponent },
   { path: 'live', component: LiveComponent },
   { path: 'auth', component: AuthComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'dash', component: DashboardComponent },
   { path: 'uploading', component: UploadingComponent },
   { path: 'video-uploade', component: VideouploadeComponent },
+  { path: 'mise-en-examen', component: MiseEnExamenComponent },
 ];
 
 @NgModule({

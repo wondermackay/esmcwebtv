@@ -1,0 +1,100 @@
+
+body {
+    background-color: #fbfbfb;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color:#ffeef3 ;
+    padding: 58px 0 0; /* Height of navbar */
+    width: 240px;
+    z-index: 600;
+    border: solid 0.1em;
+    border-color: #ffeef3;
+    border-right-color: #e3e3e3;
+    .title{
+      font-weight: bold;
+      font-size: 18px;
+      color: #513c43;
+      margin-left: 20%;
+    }
+    .list-group{
+      
+    }
+    .menu-item{
+      padding: 5% 0 5% 2%;
+      &:hover{
+        background-color: #fff;
+        width: 108%;
+        .lien{
+          color: #ae3764;
+          font-weight: bold;
+        }
+      }
+      .lien{
+        color: #8a7b80;
+        font-size: 14px;
+        text-decoration: none;
+      }
+     
+    }
+    .coll{
+      margin-left:7%;
+    }
+  }
+  .contenu{
+    .entete{
+      color: #ae3764;
+      font-size:35px;
+      font-weight: 600;
+    }
+    .boutonEm{
+      border-radius: 5%;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: #E3E3E3;
+      color: #513C43;
+    }
+  }
+  
+  .boutonCr{
+    background-color: #ae3764;
+    border-radius: 3%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    width: 350px;
+    height: 161px;
+  }
+
+
+
+
+
+
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }

@@ -1,0 +1,190 @@
+<app-sidebar-dashboard></app-sidebar-dashboard>
+<main style="margin-top:50px">
+    <div class="container pt-4" *ngIf="cont==1">
+        <section class="contenu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="text-align: center;">
+                        <div class="entete1" >Mettre une vidéo en examen</div> 
+                        <div style="margin-top:3%;" class="entete2">Suivez toute ces étapes pour mettre une vidéo en examen</div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contenu" *ngIf="step==1">
+            <div class="container">
+                <div class="row" style="margin-top:5%;margin-left:7%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="circle1 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 36 36"><g transform="translate(-59 -100)"><path d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(59 100)" fill="#ae3764"/><text transform="translate(77 125)" fill="#fafafa" font-size="18" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-5.112" y="0">1</tspan></text></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-42%;" id="Layer_1" data-name="Layer 1"  width="350" height="36" viewBox="0 0 36 36"><rect y="18" width="350" height="2" fill="#e3e3e3" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 36 36"><g transform="translate(-140 -100)"><circle cx="18" cy="18" r="18" transform="translate(140 100)" fill="#e3e3e3"/><text transform="translate(158 125)" fill="#707070" font-size="18" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-5.112" y="0">2</tspan></text></g></svg>
+                        </div> 
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row" style="margin-top:1%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                       <div class="text1" >Ecrire le titre de la vidéo</div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1">
+                       <div class="text2" >Charger la vidéo</div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row" style="margin-top:5%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 step1">
+                       <div class="tit1">Titre de la vidéo</div>
+                       <div >
+                        <input class="form-control inp1" type="text" placeholder="Entrez le titre de la vidéo ...">
+                       </div>
+                       <button style="margin-left: 25%;" class="btn but1"   (click)="etapeSuivante()" >Continuer 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                          </svg>
+                       </button>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contenu" *ngIf="step==2" >
+            <div class="container">
+                <div class="row" style="margin-top:5%;margin-left:7%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="circle1 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 36 36"><g transform="translate(-59 -100)"><path d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(59 100)" fill="#e3e3e3"/><text transform="translate(77 125)" fill="#fafafa" font-size="18" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-5.112" y="0">1</tspan></text></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-42%;" id="Layer_1" data-name="Layer 1"  width="350" height="36" viewBox="0 0 36 36"><rect y="18" width="350" height="2" fill="#e3e3e3" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 36 36"><g transform="translate(-140 -100)"><circle cx="18" cy="18" r="18" transform="translate(140 100)"  fill="#ae3764" /><text transform="translate(158 125)" fill="#fafafa" font-size="18" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-5.112" y="0">2</tspan></text></g></svg>
+                        </div> 
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+               <div class="row" style="margin-top:1%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                       <div class="text3" >Ecrire le titre de la vidéo</div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1">
+                       <div class="text4" >Charger la vidéo</div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row" style="margin-top:5%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 step1">
+                       <div class="tit1">Charger la vidéo</div>
+                       <div >
+                        <input class="form-control inp1" type="file" placeholder="Charger la vidéo ...">
+                       </div>
+                       <button style="margin-left: 25%;" class="btn but1"  type="submit" (click)="etapeSuivante()">Terminer 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                          </svg>
+                       </button>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div> 
+            </div>
+        </section>
+        <section class="contenu" *ngIf="step==3" >
+            <div class="container">
+                <div class="row" style="margin-top:5%;margin-left:7%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="circle1 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 36 36"><g transform="translate(-59 -100)"><path d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(59 100)" fill="#e3e3e3"/><text transform="translate(77 125)" fill="#fafafa" font-size="18" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-5.112" y="0">1</tspan></text></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-42%;" id="Layer_1" data-name="Layer 1"  width="350" height="36" viewBox="0 0 36 36"><rect y="18" width="350" height="2" fill="#e3e3e3" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 36 36"><g transform="translate(-140 -100)"><circle cx="18" cy="18" r="18" transform="translate(140 100)"  fill="#ae3764" /><text transform="translate(158 125)" fill="#fafafa" font-size="18" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-5.112" y="0">2</tspan></text></g></svg>
+                        </div> 
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+               <div class="row" style="margin-top:1%;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                       <div class="text3" >Ecrire le titre de la vidéo</div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1">
+                       <div class="text4" >Charger la vidéo</div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row" style="margin-top:7%;">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2" style="margin-left: 5%;">
+                        <img src="./assets/image/success.png" alt="">
+
+                    </div>
+                    <div class="col-md-5" style="margin-top:3%;"></div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" style="text-align: center;">
+                        <div class="entete3" >Waoh, vous avez mis la vidéo en examen !</div> 
+                        <div style="margin-top:1%;" class="entete4">Cliquer sur continuer pour mettre en examen une autre vidéo ou voir la liste des vidéos misent en examen.</div>
+                        <button style="margin-left: 3%; margin-top: 10%;" class="btn but2"   (click)="etapeListe()" >Continuer 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                              </svg>
+                           </button>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </section>
+     
+        
+    </div>
+    <div class="container pt-4" style="margin-top: 13%;" *ngIf="step==4" >
+        <section class="contenu" >
+           <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="">
+                        <button class="btn btnl">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" fill="#ffff" viewBox="0 0 24 24" width="20" height="20"><polygon points="18 10.5 13.5 10.5 13.5 6 10.5 6 10.5 10.5 6 10.5 6 13.5 10.5 13.5 10.5 18 13.5 18 13.5 13.5 18 13.5 18 10.5"/></svg>
+                            Ajouter une vidéo
+                        </button>
+                    </div>
+                    <div class="text5">
+                        Liste des vidéos ajoutées
+                    </div>
+                   
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row "  style="margin-top:2%; margin-left:5px;">
+                <div class="col-md-2" ></div>
+                <div class="col-md-4 rowliste">
+                   <div class="" style="margin-top: 2%;margin-left:5px;">
+                    <span class="titlef">Titre de la video</span> <br>
+                   <span class="titles">Titre de la video</span>
+                   </div>
+                </div>
+                <div class="col-md-2 rowbutt">
+                   <div class="" style="margin-top:7%; margin-left:40%;">
+                    <button class="btn btnaction1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#fff"><g id="_01_align_center" data-name="01 align center"><path d="M22.94,1.06a3.626,3.626,0,0,0-5.124,0L0,18.876V24H5.124L22.94,6.184A3.627,3.627,0,0,0,22.94,1.06ZM4.3,22H2V19.7L15.31,6.4l2.3,2.3ZM21.526,4.77,19.019,7.277l-2.295-2.3L19.23,2.474a1.624,1.624,0,0,1,2.3,2.3Z"/></g></svg>
+                    </button>
+                   <button class="btn btnaction2">
+                    <img src="./assets/image/corbeille.png" width="20" height="20" alt="">
+                   </button>
+                   </div>
+                </div>
+                <div class="col-md-4" ></div>
+            </div>
+           </div>
+        </section>
+    </div>
+</main>

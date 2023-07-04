@@ -19,6 +19,9 @@ import {FormsModule} from "@angular/forms";
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UploadingComponent } from './admin/uploading/uploading.component';
 import { VideouploadeComponent } from './admin/videouploade/videouploade.component';
+import { MiseEnExamenComponent } from './admin/dashboard/visualisation/mise-en-examen/mise-en-examen.component';
+import { ValidationComponent } from './admin/dashboard/visualisation/validation/validation.component';
+import { SidebarDashboardComponent } from './admin/dashboard/sidebar-dashboard/sidebar-dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +39,9 @@ import { VideouploadeComponent } from './admin/videouploade/videouploade.compone
     DashboardComponent,
     UploadingComponent,
     VideouploadeComponent,
+    MiseEnExamenComponent,
+    ValidationComponent,
+    SidebarDashboardComponent,
   ],
     imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule],
   providers: [],

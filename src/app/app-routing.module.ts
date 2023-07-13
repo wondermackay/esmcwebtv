@@ -10,6 +10,8 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UploadingComponent } from './admin/uploading/uploading.component';
 import { VideouploadeComponent } from './admin/videouploade/videouploade.component';
 import { MiseEnExamenComponent } from './admin/dashboard/visualisation/mise-en-examen/mise-en-examen.component';
+import { EmissioncpanelComponent } from './admin/dashboard/webtv/emissioncpanel/emissioncpanel.component';
+import { ReseauxsociauxComponent } from './admin/dashboard/reseauxsociaux/reseauxsociaux.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'uploading', component: UploadingComponent },
   { path: 'video-uploade', component: VideouploadeComponent },
   { path: 'mise-en-examen', component: MiseEnExamenComponent },
+  { path: 'emission-cpanel', component: EmissioncpanelComponent },
+  { path: 'reseaux-sociaux', component: ReseauxsociauxComponent },
 ];
 
 @NgModule({

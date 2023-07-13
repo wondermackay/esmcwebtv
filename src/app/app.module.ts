@@ -22,6 +22,8 @@ import { VideouploadeComponent } from './admin/videouploade/videouploade.compone
 import { MiseEnExamenComponent } from './admin/dashboard/visualisation/mise-en-examen/mise-en-examen.component';
 import { ValidationComponent } from './admin/dashboard/visualisation/validation/validation.component';
 import { SidebarDashboardComponent } from './admin/dashboard/sidebar-dashboard/sidebar-dashboard.component';
+import { EmissioncpanelComponent } from './admin/dashboard/webtv/emissioncpanel/emissioncpanel.component';
+import { ReseauxsociauxComponent } from './admin/dashboard/reseauxsociaux/reseauxsociaux.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,8 @@ import { SidebarDashboardComponent } from './admin/dashboard/sidebar-dashboard/s
     MiseEnExamenComponent,
     ValidationComponent,
     SidebarDashboardComponent,
+    EmissioncpanelComponent,
+    ReseauxsociauxComponent,
   ],
     imports: [BrowserModule, AppRoutingModule, NgxYoutubePlayerModule, FormsModule],
   providers: [],

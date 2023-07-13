@@ -1,0 +1,257 @@
+<app-sidebar-dashboard></app-sidebar-dashboard>
+<main style="margin-top:50px">
+    <div class="container pt-4">
+            <section class="contenu" *ngIf="step==0">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-9 entete">
+                   Bienvenue sur votre interface
+                   
+                 </div>
+                 <div class="col-md-3">
+                   <button class="btn boutonEm">
+                     Listes des EMISSIONS En ligne
+                   </button>
+                 </div>
+               </div>
+              
+             </div>
+            </section>
+            <section style="margin-top: 100px;" *ngIf="step==0">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-3 ">
+                   <a (click)="etapeSuivante();" class="btn boutonCr">
+                    <p style=" margin-top: 15%;">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                       <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                     </svg>  Créer une émission
+                    </p>
+                   </a>
+                 </div>
+                
+               </div>
+             </div>
+            </section>
+        <section class="contenu1"  *ngIf="step==1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;">
+                        <div class="entete1" >Création d'une émission</div> 
+                        <div class="entete2">La création d'émission vous permettra de catégoriser chacun de vos contenus</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contenu2"  *ngIf="step==1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="text-align: center;">
+                       
+                    </div>
+                    <div class="col-md-4" style="">
+                        <div class="form">
+                           <div class="form1">
+                                <div class="titre">  Titre</div>
+                                <input type="text" class="form-control">
+                           </div>
+                           <div class="form2">
+                                <div class="titre">  Image de couverture</div>
+                                <input type="file" class="form-control">
+                           </div>
+                           <div class="form3">
+                                <div class="titre">  Catégorie</div>
+                                <select class="form-control">
+                                    <option value="..."></option>
+                                    <option value="..."></option>
+                                </select>
+                           </div>
+                           <div class="form4">
+                               <button class="btn btnEnr" (click)="etapeSuivante();">
+                                Enregistrez l'émission
+                               </button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="text-align: center;">
+                      
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contenu3"  *ngIf="step==2">
+            <div class="container">
+                <div class="row" style="margin-top: 5%;">
+                    <div class="col-md-9 succes" style="text-align: center;">
+                       <div class="img">
+                            <img src="./assets/image/success2.png" style="margin-top:23%;" alt="">
+                           
+                       </div>
+                       <div class="txt">
+                        Emission créée avec Succès
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn boutonEm" (click)="etapeSuivante();">
+                            Listes des EMISSIONS En ligne
+                          </button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contenu4"  *ngIf="step==3">
+            <div class="container">
+                <div class="row" style="margin-top: 5%;">
+                    <div class="col-md-2" >
+                    </div>
+                    <div class="col-md-8" >
+                     <input type="text" class="form-control inp1" placeholder="Rechercher une émission...">
+                    </div>
+                    <div class="col-md-2" >
+                    </div>
+                </div>
+                <div class="row" style="margin-top:2%;">
+                    <div class="col-md-2" >
+                    </div>
+                    <div class="col-md-8" >
+                     <button type="button" class="btn but1" >Developpement</button>
+                     <button type="button" class="btn but2">Social</button>
+                     <button type="button" class="btn but3">Economie</button>
+                    </div>
+                    <div class="col-md-2" >
+                    </div>
+                </div>
+                <div class="row rowx" style="margin-top:2%;margin-left:0%;">
+                    <div class="col-md-4 md1" (click)="etapeSuivante();">
+                        <div class="cercle rounded-circle">
+                               <span class="t" style="margin-top:-55px;"> E1</span>
+                        </div>
+                        <div class="txts">
+                            <span class="txt1">Emission 1</span> <br>
+                            <span class="txt2">Le Jardin d'Eden</span> <br>
+                            <span class="txt3">Crée le 14/01/2023 à 12:23</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md2" (click)="etapeSuivante();">
+                   <div class="cercle rounded-circle">
+                               <span class="t"> E1</span>
+                        </div>
+                        <div class="txts">
+                            <span class="txt1">Emission 1</span> <br>
+                            <span class="txt2">Le Jardin d'Eden</span> <br>
+                            <span class="txt3">Crée le 14/01/2023 à 12:23</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md3" (click)="etapeSuivante();">
+                      <div class="cercle rounded-circle">
+                               <span class="t"> E1</span>
+                        </div>
+                        <div class="txts">
+                            <span class="txt1">Emission 1</span> <br>
+                            <span class="txt2">Le Jardin d'Eden</span> <br>
+                            <span class="txt3">Crée le 14/01/2023 à 12:23</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenu5"  *ngIf="step==4">
+            <div class="container">
+                <div class="row" style="margin-top: 5%;">
+                    <div class="col-md-12 tex1" style="text-align: center;" >
+                        Jardin D'Eden
+                    </div>
+                </div>
+                <div class="row" style="margin-top:2%;">
+                    <div class="col-md-8 div1">
+                        <div class="elt1">
+                            <span class="tex2">VIDEO PRINCIPALE</span> <br>
+                            <div class="bt">
+                                <span class="tex3">Il s'agit là de la vidéo explicative de l'émission et de tout ce qui doit orienter les visiteurs</span> 
+                                <button class="btn btndef" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style=" margin-left: 23%;">
+                                    Définir
+                                </button>
+                            </div>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered"  >
+                                  <div class="modal-content">
+                                    
+                                      <button type="button" class="btn-close rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                                   
+                                    <div class="modal-body">
+                                      <div class="dive1">
+                                        <p class="title">Vidéo principale</p>
+                                      </div>
+                                      <div class="dive2">
+                                        <input type="text" style="color: #C1B7BA;" placeholder="Entrez le lien de la vidéo …" class="form-control">
+                                      </div>
+                                      <div class="dive3">
+                                        <button class="btn btnval">Valider </button>
+                                      </div>
+                                      <div class="dive3" style="visibility: hidden;">
+                                        <button class="btn btnval">Valider </button>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                </div>
+                              </div>
+                              
+                        </div>
+                        <div class="elt2">
+                            <span class="tex2">Playlist PRINCIPALE</span> <br>
+                            <div class="bt">
+                                <span class="tex3">Il s'agit là de la playlist YouTube de l'émission ou toutes les vidéos seront misent</span> 
+                                <button class="btn btndef" style=" margin-left: 29%;">
+                                    Définir
+                                </button>
+                            </div>
+                        </div>
+                        <div class="" >
+                           <button class="btn btnenr">
+                                Enregistrer les modifications
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 div2">
+                        <div class="t1">
+                            Emission 01
+                        </div>
+                        <div class="t2">
+                            Jardin D'Eden
+                        </div>
+                        <div class="t3">
+                            Informations sur l'émission
+                        </div>
+                       <div class="t8">
+                        <span class="t4">
+                            Vidéo Principale
+                        </span>
+                        <span class="t5">
+                            Playlist Principale
+                        </span>
+                       </div>
+                    
+                        <div class="t9">
+                            <span class="t7">
+                                Définie
+                            </span>
+                            <span class="t6">
+                                Définie
+                            </span>
+                        </div>
+                        <div class="t10">
+                            <button class="btn btn1">
+                                Retourner aux émissions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>    

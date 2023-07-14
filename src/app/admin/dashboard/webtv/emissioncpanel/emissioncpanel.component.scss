@@ -150,37 +150,52 @@
             border-radius: 5%;
             height:180px;
             width: 400px;
+            margin-top: 2%;
+            &:hover{
+                background-color: #E3E3E3;
+                .cercle{
+                    background-color: #fff;
+                }
+            }
         }
         .cercle{
-            border: #EFEFEF solid 0.1em;
+            border: #EFEFEF solid 1px;
             font-size: 25px;
             color: #8A7B80;
-            width: 65px;
-            height: 65px;
+            margin-left: 3%;
+            width: 70px;
+            height: 70px;
             margin-top: 10%;
+            padding:3%;
             .t{
-                margin-left: 30%;
+               margin-left: 20%;
+              
                 
             }
         }
         
         .md1,.md2,.md3{
+            
             .txts{
-                margin-left: 20%;
+                margin-left: 24%;
                 margin-top: -20%;
+               
             }
             .txt1{
                color: #8A7B80; 
                font-size: 14px;
+                font-weight: 400;
             }
             .txt2{
                color: #272224; 
                font-size: 18px;
                font-weight: 600;
+              
             }
             .txt3{
                color: #8A7B80; 
                font-size: 12px;
+                font-weight: 400;
             }
         }
         .md2{

@@ -11,10 +11,11 @@
         margin-top:7%;
         .lien{
             background-color: #FAFAFA;
-            border-radius: 5%;
+            border-radius: 5px;
             margin-top: 3%;
             width: 100%;
-            height: 110px;
+           
+
             .bord{
                 
                 .elt1{
@@ -67,5 +68,247 @@
             }
         }
        
+    }
+}
+@media (min-width: 400px) {
+    .contenu{
+        background-color:blue ;
+    }
+}
+@media (min-width: 576px) {
+        .contenu{
+        background-color: red;
+    }
+}
+@media (min-width: 768px) {
+        .contenu{
+        background-color:green ;
+    }
+}
+@media (min-width: 992px ) {
+    .contenu{
+        background-color: purple;
+        margin-top: 15%;
+        .btnaj{
+            background-color: #AE3764;
+            color: #fff;
+            font-size: 21px;
+            width: 120%;
+            border-radius: 35px;
+        }
+        .contenu1{
+            margin-top:7%;
+            .lien{
+                background-color: #FAFAFA;
+                border-radius: 5px;
+                margin-top: 3%;
+                width: 120%;
+                height: 110px;
+    
+                .bord{
+                    
+                    .elt1{
+                        margin-left: 5%;
+                       padding: 4% 0 0 0;
+                       
+                       .txt1{
+                        
+                        font-size: 19px;
+                        color: #AE3764;
+                        font-weight: 600;
+                       }
+                       .btnaction2{
+                        margin-left: -2%;
+                        margin-top: -3%;
+                       }
+                       .action{
+                        margin-left:78%;
+                        margin-top: -8%;
+                        input{
+                            margin-top: 20%;
+                            
+                        }
+                       }
+                    }
+                    .elt2{
+                        margin-left: 5%;
+                        margin-top:-1%;
+                        .txt1{
+                            font-size: 13px;
+                            color: #AE3764;
+                            font-weight: 600;
+                           }
+                           .btnaction2{
+                            margin-left: -2%;
+                            margin-top: -2%;
+                           }
+                           .action{
+                            margin-left: 48%;
+                           }
+                    }
+                   
+                }
+                .elt3{
+                    margin-left:88%;
+                    .btnaction2{
+                        margin-top: -20%;
+                        background-color: #FAFAFA;
+                       
+                    }
+                }
+            }
+           
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .contenu{
+        margin-top: 13%;
+        
+        background-color: orange;
+        .btnaj{
+            background-color: #AE3764;
+            color: #fff;
+            font-size: 21px;
+            width: 100%;
+            border-radius: 35px;
+        }
+        .contenu1{
+            margin-top:7%;
+            .lien{
+                background-color: #FAFAFA;
+                border-radius: 5px;
+                margin-top: 3%;
+                width: 100%;
+                height: 110px;
+    
+                .bord{
+                    
+                    .elt1{
+                        margin-left: 5%;
+                       padding: 3% 0 0 0;
+                       
+                       .txt1{
+                        
+                        font-size: 19px;
+                        color: #AE3764;
+                        font-weight: 600;
+                       }
+                       .btnaction2{
+                        margin-left: -2%;
+                        margin-top: -3%;
+                       }
+                       .action{
+                        margin-left:77%;
+                        margin-top: -8%;
+                        input{
+                            margin-top: 22%;
+                        }
+                       }
+                    }
+                    .elt2{
+                        margin-left: 5%;
+                        margin-top: -1%;
+                        .txt1{
+                            font-size: 12px;
+                            color: #AE3764;
+                            font-weight: 600;
+                           }
+                           .btnaction2{
+                            margin-left: -2%;
+                            margin-top: -3%;
+                           }
+                           .action{
+                            margin-left: 48%;
+                           }
+                    }
+                   
+                }
+                .elt3{
+                    margin-left:87%;
+                    .btnaction2{
+                        margin-top: -20%;
+                        background-color: #FAFAFA;
+                       
+                    }
+                }
+            }
+           
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .contenu{
+        background-color: yellow;
+        margin-top: 10%;
+        .btnaj{
+            background-color: #AE3764;
+            color: #fff;
+            font-size: 21px;
+            width: 100%;
+            border-radius: 35px;
+        }
+        .contenu1{
+            margin-top:7%;
+            .lien{
+                background-color: #FAFAFA;
+                border-radius: 5px;
+                margin-top: 3%;
+                width: 100%;
+                height: 110px;
+    
+                .bord{
+                    
+                    .elt1{
+                        margin-left: 5%;
+                       padding: 3% 0 0 0;
+                       
+                       .txt1{
+                        
+                        font-size: 19px;
+                        color: #AE3764;
+                        font-weight: 600;
+                       }
+                       .btnaction2{
+                        margin-left: -2%;
+                        margin-top: -3%;
+                       }
+                       .action{
+                        margin-left:81%;
+                        margin-top: -7%;
+                        input{
+                            margin-top: 24%;
+                        }
+                       }
+                    }
+                    .elt2{
+                        margin-left: 5%;
+                        margin-top: -1%;
+                        .txt1{
+                            font-size: 13px;
+                            color: #AE3764;
+                            font-weight: 600;
+                           }
+                           .btnaction2{
+                            margin-left: -2%;
+                            margin-top: -2%;
+                           }
+                           .action{
+                            margin-left: 48%;
+                           }
+                    }
+                   
+                }
+                .elt3{
+                    margin-left:90%;
+                    .btnaction2{
+                        margin-top: -20%;
+                        background-color: #FAFAFA;
+                       
+                    }
+                }
+            }
+           
+        }
     }
 }

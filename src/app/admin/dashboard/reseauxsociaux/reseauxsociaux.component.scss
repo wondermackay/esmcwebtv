@@ -72,22 +72,21 @@
 }
 @media (min-width: 400px) {
     .contenu{
-        background-color:blue ;
-    }
+/*         background-color:blue ;
+ */    }
 }
 @media (min-width: 576px) {
         .contenu{
-        background-color: red;
-    }
+/*         background-color: red;
+ */    }
 }
 @media (min-width: 768px) {
         .contenu{
-        background-color:green ;
-    }
+/*         background-color:green ;
+ */    }
 }
 @media (min-width: 992px ) {
     .contenu{
-        background-color: purple;
         margin-top: 15%;
         .btnaj{
             background-color: #AE3764;
@@ -164,8 +163,6 @@
 @media (min-width: 1200px) {
     .contenu{
         margin-top: 13%;
-        
-        background-color: orange;
         .btnaj{
             background-color: #AE3764;
             color: #fff;
@@ -239,7 +236,6 @@
 }
 @media (min-width: 1400px) {
     .contenu{
-        background-color: yellow;
         margin-top: 10%;
         .btnaj{
             background-color: #AE3764;
